@@ -2,6 +2,11 @@
 let user=[];
 
 
+//Contact Information
+// let userName;
+// let emailAdress;
+// let subject="Nerd Academy";
+//  let message =`Welcom ${userName} To Our Academy`;
 
 
  function User(firstname,lastname,email,major)
@@ -24,5 +29,35 @@ function Adduser(event)
     let newUserMajor=event.target.major.value;
 
     let newUser=new User(newUserFirstName,newUseLastName,newUserEmail,newUserMajor);
-   console.log(newUser);
+
+    SettingUserInformation();
+
+    // //Save information for contact
+    // userName=`${event.target.firstname.value} ${event.target.lastname.value}`;
+    // emailAdress=`${event.target.email.value}`;
+  
+
+
+  
+
+    
 } 
+
+
+function SettingUserInformation()
+{
+    let userData=JSON.stringify(user);
+    localStorage.setItem('User', userData);
+}
+
+function GettingUserInformation()
+    {
+        let userString = localStorage.getItem('User');
+        let userInformatin = JSON.parse(userString);
+        if (userInformatin !== null) {
+            user = userInformatin;
+        }
+
+    }
+
+ 
