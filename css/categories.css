@@ -2,6 +2,8 @@
   --shadow: rgba(0, 0, 0, 0.411) 0px 2px 4px;
   --radius: 20px;
   --radiusBig: 40px;
+  --gradientOne: linear-gradient(343deg, rgba(247, 110, 185, 0.5) 20%, rgb(235, 49, 210) 100%);
+  --gradientTwo: linear-gradient(343deg, rgba(252, 255, 101, 0.5) 0%, rgba(49,235,186,1) 100%);
 }
 
 body {
@@ -38,44 +40,6 @@ main {
   width: 100%;
   height: 530px;
 }
-.splideCornerAnimationContainer {
-  position: absolute;
-  right: 0;
-  width: 95%;
-  height: 100%;
-
-  border-radius: var(--radiusBig);
-
-  overflow: hidden;
-}
-.splideAnimOne {
-  background: rgba(172, 231, 35, 0.623);
-  background: linear-gradient(343deg, rgba(231, 35, 84, 0.5) 20%, rgb(235, 49, 210) 100%);
-
-  position: relative;
-  left: 90%;
-  bottom: 20%;
-  width: 140px;
-  height: 140px;
-
-  transform: rotate(45deg);
-  transition: 0.8s ease;
-}
-.splideAnimTwo {
-  background: rgba(172, 231, 35, 0.623);
-  background: linear-gradient(343deg, rgba(171,231,35,0.5) 0%, rgba(49,235,186,1) 100%);
-
-  position: relative;
-  left: 85%;
-  bottom: 15%;
-  width: 140px;
-  height: 140px;
-
-  border-radius: 100%;
-
-  transform: rotate(45deg);
-  transition: 0.8s ease;
-}
 
 .courseCardContainerShadow {
   border-radius: var(--radiusBig);
@@ -89,7 +53,8 @@ main {
 }
 .courseCardTitle {
   display: inline-block;
-  margin: 35px 0 11px 55px;
+  margin: 35px 0 0 55px;
+  padding-bottom: 13px;
   font-size: 62px;
   font-weight: bolder;
   background: -webkit-linear-gradient(295deg, rgba(242, 2, 124, 1) 0%, rgba(184, 46, 205, 1) 28%, rgba(31, 74, 222, 1) 58%, rgba(0, 215, 255, 1) 100%);
@@ -148,6 +113,7 @@ main {
 }
 .slideImgTitle {
   font-size: 36px;
+  line-height: 1.2;
   color: white;
   position: absolute;
   top: 5%;
@@ -158,20 +124,135 @@ main {
   width: 100%;
   opacity: 88%;
 }
+
+.splideCornerAnimationContainer {
+  position: absolute;
+  right: 0;
+  width: 95%;
+  height: 100%;
+
+  border-radius: var(--radiusBig);
+
+  overflow: hidden;
+}
+#splideAnimOne__1 {
+  z-index: +90;
+  background: rgba(172, 231, 35, 0.623);
+  background: var(--gradientOne);
+
+  position: relative;
+  left: 80%;
+  top: 4%;
+  bottom: 0%;
+  width: 90px;
+  height: 90px;
+
+  transform: rotate(45deg);
+  transition: 0.8s ease;
+}
+#splideAnimTwo__1 {
+  z-index: +90;
+  /* background: rgba(172, 231, 35, 0.623);
+  background: linear-gradient(343deg, rgba(231, 35, 84, 0.5) 20%, rgb(235, 49, 210) 100%); */
+  
+  display: block;
+  font-size: 150px;
+  position: relative;
+  left: 68%;
+  bottom: 12%;
+
+  background: -webkit-linear-gradient(295deg, rgb(58, 209, 255) 0%, rgba(184, 46, 205, 1) 28%, rgba(31, 74, 222, 1) 58%, rgb(173, 30, 230) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+  line-height: 0.3;
+  margin: 0;
+  padding: 0;
+
+  transform: rotate(0deg);
+  opacity: 0.8;
+  user-select: none;
+  transition: 0.8s ease;
+  /* border: 1px red solid; */
+  width: 100px;
+  height: 80px;
+}
+#splideAnimThree__1 {
+  z-index: +90;
+
+  background: rgba(172, 231, 35, 0.623);
+  background: var(--gradientTwo);
+
+  position: relative;
+  left: 56%;
+  bottom: 31%;
+  width: 120px;
+  height: 120px;
+
+  border-radius: 100%;
+
+  transform: rotate(45deg);
+  transition: 0.8s ease;
+
+  transform: scale(0.7);  
+}
+#card__1:hover #splideAnimOne__1 {
+  transform: rotate(135deg);
+}
+#card__1:hover #splideAnimTwo__1 {
+  transform: rotate(-45deg);
+  
+}
+#card__1:hover #splideAnimThree__1 {
+  transform: scale(1);  
+}
+
+#splideAnimOne__2 {
+  z-index: +90;
+  background: rgba(172, 231, 35, 0.623);
+  background: var(--gradientOne);
+
+  position: relative;
+  left: 90%;
+  bottom: 20%;
+  width: 140px;
+  height: 140px;
+
+  transform: rotate(45deg);
+  transition: 0.8s ease;
+}
+#splideAnimTwo__2 {
+  z-index: +90;
+
+  background: rgba(172, 231, 35, 0.623);
+  background: var(--gradientTwo);
+
+  position: relative;
+  left: 85%;
+  bottom: 15%;
+  width: 140px;
+  height: 140px;
+
+  border-radius: 100%;
+
+  transform: rotate(45deg);
+  transition: 0.8s ease;
+}
+#card__2:hover #splideAnimOne__2 {
+  bottom: 10%;
+}
+#card__2:hover #splideAnimTwo__2 {
+  left: 88%;
+}
+
 .slideImgDiv:hover .hoverJoinusOverlay {
   opacity: 1;
   backdrop-filter: blur(3px);
 }
-.courseCardContainer:hover .splideAnimTwo {
-  left: 88%;
-}
-.courseCardContainer:hover .splideAnimOne {
-  bottom: 10%;
-}
-
 .dimOverlay {
   background: rgba(0, 0, 0, 0);
-  background: linear-gradient(180deg, rgb(0, 0, 0) 15%, rgba(0, 0, 0, 0) 40%);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 5%, rgba(0, 0, 0, 0) 40%);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -179,7 +260,7 @@ main {
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0.6;
+  opacity: 0.4;
   overflow: hidden;
 }
 .hoverJoinusOverlay {
@@ -205,6 +286,7 @@ main {
   border: 3px solid rgb(255, 255, 255);
   color: rgb(255, 255, 255);
   opacity: 88%;
+  cursor: pointer;
 
   font-size: 32px;
   font-weight: normal;
