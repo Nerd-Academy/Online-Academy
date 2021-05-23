@@ -10,30 +10,173 @@ main {
   }
   
 
-div ul {
-  padding-left: 10px;
+#sidePanel ul {
+  
   position: fixed;
+  list-style-type: none;
+  margin-left: 10px;
+  width: 115px;
+  background-color: #f1f1f1;
+  
 }
 
-div ul li {
+/* #sidePanel ul li {
   margin-top: 30px;
-}
-div a {
+} */
+#sidePanel li a {
+  padding: 10px;
   text-decoration: none;
+  display: block;
+  color: #000;
+  
+}
+#sidePanel li.active {
+  background-color: #4CAF50;
+  color: white;
+}
+#sidePanel  li a:hover {
+  background-color: #555;
+  color: white;
 }
 
 
-main section:nth-child(1) {
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcnyHcErjXASFe1Imj6U_2lmC6xN-UCNyNKuIvSB21UX3ooLyEgBXgnNWo2TBz6pE9gME&usqp=CAU);
+
+ #first-section {
+  background-image: url(/img/index/home_title_background.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 30px;
+  
 }
-main section:nth-child(3) {
-  margin-left: 100px;
+#first-section h2{
+  color: aliceblue;
+  font-size: 100px;
+ padding-top: 100px;
+  margin-left:50px
+
 }
-main section:nth-child(3) div {
-  display: inline-block;
-  width: 300px;
+#first-section p{
+  color: aliceblue;
+  font-size: xx-large;
+  margin-left: 50px;
+}
+
+
+
+#ourAcademy {
   height: 300px;
+  width: 100%;
+  border:2px solid brown;
+  border-radius: 10% 10px 10px 10%;
+  margin-bottom: 50px;
+  background-color: rgb(216, 216, 235);
 }
-main section:nth-child(3) div:nth-child(5) {
-  margin-left: 150px;
+#aboutCourses{
+  height: 300px;
+  width: 100%;
+  border:1px solid rgb(76, 146, 72);
+  border-radius: 10px 10% 10% 10px;
+  margin-bottom: 50px;
+  background-color: rgb(228, 228, 235);
+  
 }
+#ourAcademy img{
+  width: 33%;
+  height: 300px;
+  border-radius: 10%;
+  float: left;
+}
+#aboutCourses img{
+  width: 33%;
+  height: 300px;
+  border-radius: 10%;
+  float: right;
+}
+
+.middle-sections-text{
+  width:65%;
+  height: 300px;
+  float:right;
+ 
+  
+  
+}
+
+.middle-sections-text h2{
+color:black ;
+font-size: xx-large;
+margin-top: 30px;
+margin-bottom: 10px;
+margin-left: 30px;
+}
+
+.middle-sections-text p{
+font-size: larger;
+}
+
+
+
+
+ /* #ourAcademy div{
+  background-color: red;
+  width: 677px;
+  height:300px ;
+  float:right;
+  object-fit: cover;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+}
+#About-Courses div{
+  background-color: blue;
+  width: 677px;
+  height:300px ;
+  float:right;
+  
+} */
+
+#ourNerds {
+ 
+  
+  
+  
+}
+
+#ourNerds h2{
+  color:black ;
+  font-size: xx-large;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left:470px;
+  
+}
+
+#ourNerds div {
+  display: inline-block;
+  width: 200px;
+  height: 320px;
+
+ }
+#ourNerds div img{
+  width: 200px;
+  height: 320px;
+  object-fit:cover;
+}
+/* #ourNerds div:nth-child(2) {
+   margin-left: 0px;
+} */
+
+#ourNerds div{
+  margin-left: 120px;
+}
+
+#ourNerds div:nth-child(5){
+  margin-left: 280px;
+  
+}
+
+
+
