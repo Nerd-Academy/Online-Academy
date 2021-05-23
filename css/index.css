@@ -5,6 +5,9 @@
   html{
     scroll-behavior: smooth;
   }
+  /* #space{
+    height: 80px;
+  } */
 
 main {
     width: 80%;
@@ -65,22 +68,26 @@ main {
   color: aliceblue;
   font-size: xx-large;
   margin-left: 50px;
+  
 }
 
-
+#Academ{
+  height: 80px;
+  
+  margin-top: 150px;
+}
 
 #ourAcademy {
   height: 300px;
   width: 100%;
-  border:2px solid brown;
   border-radius: 10% 10px 10px 10%;
   margin-bottom: 50px;
   background-color: rgb(216, 216, 235);
+  
 }
 #aboutCourses{
   height: 300px;
   width: 100%;
-  border:1px solid rgb(76, 146, 72);
   border-radius: 10px 10% 10% 10px;
   margin-bottom: 50px;
   background-color: rgb(228, 228, 235);

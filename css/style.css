@@ -12,6 +12,10 @@ header {
 
 main {
     margin-top: 100px;
+    min-height: 300px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header img {
@@ -43,8 +47,16 @@ footer h4 {
 }
 
 footer div {
-  margin-left: 620px;
+  /* margin-left: 620px; */
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 footer i {
   margin-left: 10px;
+}
+
+footer i:first-child {
+  margin-left: 0px;
 }
