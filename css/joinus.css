@@ -1,0 +1,52 @@
+#JoinUs fieldset
+{
+border :3px solid black;
+padding: 20px;
+margin: 10px;
+position: relative;
+width: 50%;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+ #JoinUs fieldset input
+{
+    display: inline;
+    border-radius: 20px;
+    width: 40%;
+    padding: 10px;
+    margin-top: 5px;
+
+} 
+
+#JoinUs fieldset label
+{
+    display: inline-block;
+
+    width: 40%;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+#submit
+
+{
+    display: inline-block;
+margin-left: 60%;
+border-radius: 15px;
+
+}
+#submit:hover
+{
+    background-color: black;
+    color: blanchedalmond;
+}
+
+
+#JoinUs fieldset legend
+{
+    font-size: 30px;
+    font-weight: bold;
+}
