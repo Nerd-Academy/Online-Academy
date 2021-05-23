@@ -8,16 +8,11 @@
     <!-- <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" /> -->
 
     <script src="https://kit.fontawesome.com/d411685a29.js" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
     <link rel="stylesheet" href="libraries/splide-2.4.21/dist/css/splide.min.css" />
 
     <link rel="stylesheet" href="css/reset.css" />
-
     <link rel="stylesheet" href="css/style.css" />
-
-
-
     <link rel="stylesheet" href="css/categories.css" />
   </head>
   <body>
@@ -31,8 +26,7 @@
           <li><a href="aboutus.html">About Us</a></li>
           <li><a href="joinus.html">Join Us</a></li>
           <li><a href="mycorses.html">My Courses</a></li>
-          </ul>
-
+        </ul>
       </nav>
     </header>
     <main>
@@ -52,43 +46,52 @@
           <i class="fas fa-arrow-right"></i>
         </div> 
       </div> -->
-        <section id="mathCardContainer">
-          <div id="mathCardContainerShadow">
-            <div>
-              <h2>Math</h2>
+        <section class="courseCardContainer">
+          <div class="courseCardContainerShadow">
+            <div class="splideCornerAnimationContainer">
+              <div class="splideAnimOne"></div>
+              <div class="splideAnimTwo"></div>
             </div>
-            <div id="mathFlex">
-              <img id="mathImg" src="img/categories/math_simpson.jpg" alt="" />
+            <div>
+              <h2 class="courseCardTitle">Math</h2>
+            </div>
+            <div class="courseFlex">
+              <img class="courseImg" src="img/categories/math_simpson.jpg" alt="" />
 
-              <div class="courseSlides splide">
+              <div class="courseSlidesContainer splide">
                 <div class="splide__track">
                   <ul class="splide__list">
-
-
-                    <div class="splide__slide">
-                      <div><img src="img/categories/math_main.jpg" alt="" /></div>
-                      <div class="instructorBio">
-                        <div>
-                          <img src="img/categories/guy_1.jpg" alt="" />
-                          <h2>Dr. David\brJohn</h2>
-                        </div>
-                        <div>
-                          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero suscipit delectus ea quasi, voluptatum obcaecati in voluptatibus sit nisi, dignissimos ad recusandae, et corrupti necessitatibus! Minima asperiores voluptatum ad laudantium.</p>
-                        </div>
-                        <div class="courseButton"></div>
+                    <li class="splide__slide coursesSlides">
+                      <div class="slideImgDiv">
+                        <img src="img/categories/math_main.jpg" alt="" />
+                        <div class="dimOverlay"></div>
+                        <h2 class="slideImgTitle">Math 101 - complete beginners</h2>
+                        <div class="hoverJoinusOverlay"><div class="hoverJoinUsButton">Join Us</div></div>
                       </div>
-                    </div>
+                      <div class="instructorAndCourseDetails">
+                        <div class="instructorImgAndName">
+                          <img class="instructorImg" src="img/categories/guy_1.jpg" alt="" />
+                          <h2>
+                            Dr. David <br />
+                            John
+                          </h2>
+                        </div>
+                        <div>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse commodi illo reprehenderit accusantium voluptatibus maxime quos nobis dolorem magni in facilis, quia iusto minima, quas iste, magnam autem id quaerat. Lorem ipsum dolor sit amet consectetur</p>
+                        </div>
+                      </div>
+                    </li>
 
-
-                    <div class="splide__slide"><img src="img/categories/study_1.jpg" alt="" /></div>
-                    <div class="splide__slide"><img src="img/categories/study_1.jpg" alt="" /></div>
+                    <li class="splide__slide"><img src="img/categories/study_1.jpg" alt="" /></li>
+                    <li class="splide__slide"><img src="img/categories/study_1.jpg" alt="" /></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
+          
         </section>
-        <section id="designCardContainer">
+        <!-- <section id="designCardContainer">
           <div id="designCardContainerShadow">
             <div>
               <h2>Design</h2>
@@ -107,7 +110,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </section> -->
       </section>
     </main>
     <footer>
