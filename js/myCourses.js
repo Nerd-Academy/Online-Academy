@@ -6,16 +6,13 @@ function loadCart() {
   cartFromLocalStorage = JSON.parse(localStorage.getItem("My Courses")) || [];
 }
 function loadCoursesArrayIntoLocalStorage() {
-  localStorage.removeItem('My Courses');
+  localStorage.removeItem("My Courses");
   let stringCoursesArray = JSON.stringify(cartFromLocalStorage);
-  localStorage.setItem('My Courses',stringCoursesArray)
+  localStorage.setItem("My Courses", stringCoursesArray);
 }
-
-setCounter();
 
 let sectionEl = document.getElementById("mycart");
 // sectionEl.addEventListener('click', removeCourse);
-
 
 function renderCourse() {
   loadCart();
@@ -56,24 +53,32 @@ function renderCourse() {
 
     // removeCourseEl.setAttribute('quantity',courseCart[i].product);
     removeCourseEl.setAttribute("id", `remove_${i}`);
-    removeCourseEl.addEventListener("click", removeCourse);
+    removeCourseEl.addEventListener("click", removeCourseFromHtmlAndLS);
   }
 }
 renderCourse();
-
 console.log(cartFromLocalStorage);
 
-function removeCourse(event) {
-  let cName = event.target.parentElement.children[0].textContent;
+function removeCourseFromHtmlAndLS(event) {
+  console.log('event.target = ', event.target);
+  console.log('courseName on HTML = ',event.target.parentElement.children[0].textContent);
+
+  let courseName = event.target.parentElement.children[0].textContent;
+
   for (let i = 0; i < cartFromLocalStorage.length; i++) {
-    if (cName === cartFromLocalStorage[i].courseName);
-    {
-      
+
+    console.log(courseName === cartFromLocalStorage[i].courseName)
+    if (courseName === cartFromLocalStorage[i].courseName){
+      console.log(`cartFromLocalStorage ${[i]}.courseName = `, cartFromLocalStorage[i].courseName);
       cartFromLocalStorage.splice(i, 1);
       break;
+
     }
   }
-  console.log("cartFromLocalStorage = ", cartFromLocalStorage)
+
   loadCoursesArrayIntoLocalStorage();
   event.target.parentElement.remove();
+  decreaseAndSetCounterToHtmlAndLS();
+
+  console.log(cartFromLocalStorage);
 }

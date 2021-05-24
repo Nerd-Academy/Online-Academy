@@ -31,7 +31,8 @@ for (var i = 0, len = ids.length; i < len; i++) {
 
 function addCourse(event) {
   event.preventDefault();
-  ++counter;
+  increaseAndSetCounterToHtmlAndLS(); 
+
   let instructorName = event.target.children[1].children[0].children[1].innerText;
 
   let courseName = event.target.children[0].children[2].innerText;
@@ -46,7 +47,7 @@ function addCourse(event) {
 
   let newCourse = new MyCourses(courseName, courseImgSrc, instructorName, instructorImg, courseHours, coursePrise);
   settingCourses();
-  settingCounter();
+
 }
 
 function settingCourses() {
@@ -55,11 +56,6 @@ function settingCourses() {
 }
 
 GettingCourses();
-
-function settingCounter() {
-  let data = JSON.stringify(counter);
-  localStorage.setItem("Counter", data);
-}
 
 MyCourses.prototype.removeItem = function (courseName) {
   this.courseCart.splice(courseName);
