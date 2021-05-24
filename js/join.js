@@ -20,7 +20,11 @@ function User(firstname, lastname, email, major) {
 let formEL = document.getElementById('JoinUs');
 formEL.addEventListener('submit', Adduser);
 function Adduser(event) {
+  
+  localStorage.clear;
+
   event.preventDefault();
+
   let newUserFirstName = event.target.firstname.value;
   let newUseLastName = event.target.lastname.value;
   let newUserEmail = event.target.email.value;
@@ -49,6 +53,7 @@ function Adduser(event) {
 
 
 function SettingUserInformation() {
+
   let userData = JSON.stringify(user);
   localStorage.setItem('User', userData);
 }
