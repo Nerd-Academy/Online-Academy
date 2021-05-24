@@ -1,251 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NERD</title>
-    <link rel="shortcut icon" href="https://icon-library.com/images/nerd-icon-png/nerd-icon-png-26.jpg"
-        type="image/x-icon">
+    <link rel="shortcut icon" href="https://icon-library.com/images/nerd-icon-png/nerd-icon-png-26.jpg" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/d411685a29.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
-</head>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1></h1>
-        <img src="https://icon-library.com/images/nerd-icon-png/nerd-icon-png-26.jpg " width=50px alt="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="catagores.html">Categories</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="joinus.html" >Join Us</a></li>
-                <li><a href="mycorses.html">My Courses</a><span id="counterSpan"></span></li>
-            </ul>
-
-
-        </nav>
-
+      <h1></h1>
+      <img src="https://icon-library.com/images/nerd-icon-png/nerd-icon-png-26.jpg " width="50px" alt="logo" />
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="aboutUs.html">About Us</a></li>
+          <li><a href="joinUs.html">Join Us</a></li>
+          <li><a href="myCourses.html">My Courses </a><span id="counterSpan"></span></li>
+        </ul>
+      </nav>
     </header>
     <div id="sidePanel">
-        <nav>
-            <ul>
-                <li class="active"><a href="#Academ">Our Academy</a></li>
-                <li><a href="#aboutCourse">About Courses</a></li>
-                <li><a href="#ourNerds">Our Nerds</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li class="active"><a href="#Academ">Our Academy</a></li>
+          <li><a href="#aboutCourse">About Courses</a></li>
+          <li><a href="#ourNerds">Our Nerds</a></li>
+        </ul>
+      </nav>
     </div>
     <main>
+      <section id="first-section">
+        <h2>our statement</h2>
+        <p>Towards a society possessing skill and knowledge</p>
+        <div id="Academ"></div>
+      </section>
 
-        <section id="first-section">
-            <h2>our statement</h2>
-            <p>Towards a society possessing skill and knowledge</p>
-            <div id="Academ"></div>
+      <section id="ourAcademy">
+        <img src="img/index/ourAcadmey.jpg" alt="ourAcademy" />
 
-        </section>
+        <div class="middle-sections-text">
+          <h2>OurAcademy</h2>
+          <p>A company interested in raising the educational level of young adults and seeking to develop their skills in various fields of knowledge (languages, information technology, mathematics, ...). In light of the current situation of the global pandemic, Covid-19, the world is moving towards electronic learning, we hope that you will find in our academy what you aspire for, as there is a high-level academic staff and advanced teaching content according to the changes of the era, and with the latest methods and teaching methods.</p>
+        </div>
+      </section>
 
-        
+      <section id="aboutCourses">
+        <img src="img/index/courses.jpg" alt="About Courses img" />
 
-        <section id="ourAcademy">
+        <div class="middle-sections-text">
+          <h2>About Courses</h2>
+          <p>Our Academy offers educational courses in each of the following: Languages ​​(such as English, French, and Turkish) Information technology (such as full stack developer, mobile developer, desktop developer) Mathematics (such as Barshall and linear algebra, statistics and probability)</p>
+        </div>
+      </section>
 
-            <img src="img/index/ourAcadmey.jpg" alt="ourAcademy">
+      <section id="ourNerds">
+        <h2>Our Nerds</h2>
+        <div class="flip-cards">
+          <div class="card-container">
+            <div class="card">
+              <div class="face back">
+                <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Iure eligendi sequi non modi quis velit dignissimos, deleniti et accusamus sunt ipsa dolores beatae fugiat id minima veritatis aperiam amet officiis.</p>
 
-
-
-
-            <div class="middle-sections-text">
-                <h2 >OurAcademy</h2>
-                <p>A company interested in raising the educational level of young adults and seeking to develop their
-                    skills in various fields of knowledge (languages, information technology, mathematics, ...).
-                    In light of the current situation of the global pandemic, Covid-19, the world is moving towards
-                    electronic learning, we hope that you will find in our academy what you aspire for, as there is a
-                    high-level academic staff and advanced teaching content according to the changes of the era, and
-                    with the latest methods and teaching methods.</p>
+                <div class="fontAwesomeDiv">
+                  <i class="fab fa-facebook-square"></i>
+                  <i class="fab fa-twitter-square"></i>
+                  <i class="fab fa-instagram-square"></i>
+                  <i class="fab fa-linkedin"></i>
+                </div>
+              </div>
+              <div class="face left"></div>
+              <div class="face right"></div>
+              <div class="face front">
+                <img src="img/index/nerd1.jpg" alt="image" class="image" />
+              </div>
             </div>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div class="face back">
+                <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Iure eligendi sequi non modi quis velit dignissimos, deleniti et accusamus sunt ipsa dolores beatae fugiat id minima veritatis aperiam amet officiis.</p>
 
-        </section>
-
-        <section id="aboutCourses">
-
-            <img src="img/index/courses.jpg" alt="About Courses img">
-
-            <div class="middle-sections-text">
-                <h2>About Courses</h2>
-                <p>Our Academy offers educational courses in each of the following:
-                    Languages ​​(such as English, French, and Turkish)
-                    Information technology (such as full stack developer, mobile developer, desktop developer)
-                    Mathematics (such as Barshall and linear algebra, statistics and probability)</p>
+                <div class="fontAwesomeDiv">
+                  <i class="fab fa-facebook-square"></i>
+                  <i class="fab fa-twitter-square"></i>
+                  <i class="fab fa-instagram-square"></i>
+                  <i class="fab fa-linkedin"></i>
+                </div>
+              </div>
+              <div class="face left"></div>
+              <div class="face right"></div>
+              <div class="face front">
+                <img src="img/index/nerd2.jpg" alt="image" class="image" />
+              </div>
             </div>
-        </section>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <div class="face back">
+                <h3>Dr. Albert Einstein</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Iure eligendi sequi non modi quis velit dignissimos, deleniti et accusamus sunt ipsa dolores beatae fugiat id minima veritatis aperiam amet officiis.</p>
 
-
-
-
-        <section id="ourNerds">
-            <h2>Our Nerds</h2>
-            <div class="flip-cards">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="face back">
-                            <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Iure eligendi sequi non modi
-                                quis velit dignissimos, deleniti et accusamus sunt ipsa dolores beatae fugiat id minima
-                                veritatis aperiam amet officiis.</p>
-
-                            <div class="fontAwesomeDiv">
-                                <i class="fab fa-facebook-square"></i>
-                                <i class="fab fa-twitter-square"></i>
-                                <i class="fab fa-instagram-square"></i>
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                        </div>
-                        <div class="face left"></div>
-                        <div class="face right"></div>
-                        <div class="face front">
-                            <img src="img/index/nerd1.jpg" alt="image" class="image">
-                        </div>
-                    </div>
+                <div class="fontAwesomeDiv">
+                  <i class="fab fa-facebook-square"></i>
+                  <i class="fab fa-twitter-square"></i>
+                  <i class="fab fa-instagram-square"></i>
+                  <i class="fab fa-linkedin"></i>
                 </div>
-                <div class="card-container">
-                    <div class="card">
-                        <div class="face back">
-                            <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Iure eligendi sequi non modi
-                                quis velit dignissimos, deleniti et accusamus sunt ipsa dolores beatae fugiat id minima
-                                veritatis aperiam amet officiis.</p>
-
-                            <div class="fontAwesomeDiv">
-                                <i class="fab fa-facebook-square"></i>
-                                <i class="fab fa-twitter-square"></i>
-                                <i class="fab fa-instagram-square"></i>
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                        </div>
-                        <div class="face left"></div>
-                        <div class="face right"></div>
-                        <div class="face front">
-                            <img src="img/index/nerd2.jpg" alt="image" class="image">
-                        </div>
-                    </div>
-                </div>
-                <div class="card-container">
-                    <div class="card">
-                        <div class="face back">
-                            <h3>Dr. Albert Einstein</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Iure eligendi sequi non modi
-                                quis velit dignissimos, deleniti et accusamus sunt ipsa dolores beatae fugiat id minima
-                                veritatis aperiam amet officiis.</p>
-
-                            <div class="fontAwesomeDiv">
-                                <i class="fab fa-facebook-square"></i>
-                                <i class="fab fa-twitter-square"></i>
-                                <i class="fab fa-instagram-square"></i>
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                        </div>
-                        <div class="face left"></div>
-                        <div class="face right"></div>
-                        <div class="face front">
-                            <img src="img/index/nerd6.jpg" alt="image" class="image">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <div class="card">
-                        <div class="face back">
-                            <h3>Dr. Michele Angelo</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Iure eligendi sequi<br> non modi
-                                quis velit dignissimos, deleniti et accusamus sunt ipsa dolores beatae fugiat id minima
-                                veritatis aperiam amet officiis.</p>
-
-                            <div class="fontAwesomeDiv">
-                                <i class="fab fa-facebook-square"></i>
-                                <i class="fab fa-twitter-square"></i>
-                                <i class="fab fa-instagram-square"></i>
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                        </div>
-                        <div class="face left"></div>
-                        <div class="face right"></div>
-                        <div class="face front">
-                            <img src="img/index/nerd5.jpg" alt="image" class="image">
-                        </div>
-                    </div>
-
-                </div>
-
+              </div>
+              <div class="face left"></div>
+              <div class="face right"></div>
+              <div class="face front">
+                <img src="img/index/nerd6.jpg" alt="image" class="image" />
+              </div>
             </div>
+          </div>
 
+          <div class="card-container">
+            <div class="card">
+              <div class="face back">
+                <h3>Dr. Michele Angelo</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Iure eligendi sequi<br />
+                  non modi quis velit dignissimos, deleniti et accusamus sunt ipsa dolores beatae fugiat id minima veritatis aperiam amet officiis.
+                </p>
 
-        </section>
-        <section>
-            <div class="flip-cards">
-                <div class="card-container">
-                    <div class="card">
-                        <div class="face back">
-                            <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Iure eligendi sequi non modi
-                                quis velit dignissimos, deleniti et accusamus sunt ipsa dolores beatae fugiat id minima
-                                veritatis aperiam amet officiis.</p>
-
-                            <div class="fontAwesomeDiv">
-                                <i class="fab fa-facebook-square"></i>
-                                <i class="fab fa-twitter-square"></i>
-                                <i class="fab fa-instagram-square"></i>
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                        </div>
-                        <div class="face left"></div>
-                        <div class="face right"></div>
-                        <div class="face front">
-                            <img src="img/index/nerd3.jpg" alt="image" class="image">
-                        </div>
-                    </div>
+                <div class="fontAwesomeDiv">
+                  <i class="fab fa-facebook-square"></i>
+                  <i class="fab fa-twitter-square"></i>
+                  <i class="fab fa-instagram-square"></i>
+                  <i class="fab fa-linkedin"></i>
                 </div>
-
-
-                <div class="card-container">
-                    <div class="card">
-                        <div class="face back">
-                            <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Iure eligendi sequi non modi
-                                quis velit dignissimos, deleniti et accusamus sunt ipsa dolores beatae fugiat id minima
-                                veritatis aperiam amet officiis.</p>
-
-                            <div class="fontAwesomeDiv">
-                                <i class="fab fa-facebook-square"></i>
-                                <i class="fab fa-twitter-square"></i>
-                                <i class="fab fa-instagram-square"></i>
-                                <i class="fab fa-linkedin"></i>
-                            </div>
-                        </div>
-                        <div class="face left"></div>
-                        <div class="face right"></div>
-                        <div class="face front">
-                            <img src="img/index/nerd2.jpg" alt="image" class="image">
-                        </div>
-                    </div>
-
-                </div>
+              </div>
+              <div class="face left"></div>
+              <div class="face right"></div>
+              <div class="face front">
+                <img src="img/index/nerd5.jpg" alt="image" class="image" />
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="flip-cards">
+          <div class="card-container">
+            <div class="card">
+              <div class="face back">
+                <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Iure eligendi sequi non modi quis velit dignissimos, deleniti et accusamus sunt ipsa dolores beatae fugiat id minima veritatis aperiam amet officiis.</p>
 
+                <div class="fontAwesomeDiv">
+                  <i class="fab fa-facebook-square"></i>
+                  <i class="fab fa-twitter-square"></i>
+                  <i class="fab fa-instagram-square"></i>
+                  <i class="fab fa-linkedin"></i>
+                </div>
+              </div>
+              <div class="face left"></div>
+              <div class="face right"></div>
+              <div class="face front">
+                <img src="img/index/nerd3.jpg" alt="image" class="image" />
+              </div>
+            </div>
+          </div>
+
+          <div class="card-container">
+            <div class="card">
+              <div class="face back">
+                <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Iure eligendi sequi non modi quis velit dignissimos, deleniti et accusamus sunt ipsa dolores beatae fugiat id minima veritatis aperiam amet officiis.</p>
+
+                <div class="fontAwesomeDiv">
+                  <i class="fab fa-facebook-square"></i>
+                  <i class="fab fa-twitter-square"></i>
+                  <i class="fab fa-instagram-square"></i>
+                  <i class="fab fa-linkedin"></i>
+                </div>
+              </div>
+              <div class="face left"></div>
+              <div class="face right"></div>
+              <div class="face front">
+                <img src="img/index/nerd2.jpg" alt="image" class="image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-
-        <h4>Nerd Academy</h4>
-        <div>
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-twitter-square"></i>
-            <i class="fab fa-instagram-square"></i>
-            <i class="fab fa-linkedin"></i>
-        </div>
+      <h4>Nerd Academy</h4>
+      <div>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram-square"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
     </footer>
+    <script src="js/app.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/mycorses.js"></script>
-
-</body>
-
+    <!-- <script src="js/myCourses.js"></script> -->
+  </body>
 </html>
