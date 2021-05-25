@@ -1,6 +1,9 @@
 "use strict";
 
 let cartFromLocalStorage;
+let totalPrise=0;
+let priseValue;
+let priseInt;
 
 function loadCart() {
   cartFromLocalStorage = JSON.parse(localStorage.getItem("My Courses")) || [];
@@ -12,6 +15,8 @@ function loadCoursesArrayIntoLocalStorage() {
 }
 
 let sectionEl = document.getElementById("mycart");
+let sectionEl_1=document.getElementById("totalprise");
+
 // sectionEl.addEventListener('click', removeCourse);
 
 function renderCourse() {
@@ -70,8 +75,34 @@ function renderCourse() {
     // removeCourseEl.setAttribute('quantity',courseCart[i].product);
     removeCourseEl.setAttribute("id", `remove_${i}`);
     removeCourseEl.addEventListener("click", removeCourseFromHtmlAndLS);
+
+  
+   priseInt=parseInt(cartFromLocalStorage[i].prise);
+
+    totalPrise=totalPrise+priseInt;
+   
   }
+  if(priseInt!==null)
+  {
+    total();
+
+  }
+ 
 }
+console.log(totalPrise);
+function total()
+{
+
+
+
+  let spanEl=document.createElement('span');
+  sectionEl_1.appendChild(spanEl);
+  spanEl.textContent=`The total price is \n ${totalPrise}`;
+}
+
+
+
+
 renderCourse();
 console.log(cartFromLocalStorage);
 
@@ -93,10 +124,16 @@ function removeCourseFromHtmlAndLS(event) {
       break;
 
     }
+    let priseInt=parseInt(cartFromLocalStorage[i].prise);
+
+    totalPrise=totalPrise-priseInt;
+     priseValue=cartFromLocalStorage[i].prise;
   }
+  window.location.reload();
 
   loadCoursesArrayIntoLocalStorage();
   decreaseAndSetCounterToHtmlAndLS();
 
   console.log(cartFromLocalStorage);
 }
+
