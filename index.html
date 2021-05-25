@@ -16,17 +16,21 @@
 
 <body>
   <header>
-    <h1></h1>
-    <img src="https://icon-library.com/images/nerd-icon-png/nerd-icon-png-26.jpg " width="50px" alt="logo" />
+    <div><img src="https://icon-library.com/images/nerd-icon-png/nerd-icon-png-26.jpg " width="50px" alt="logo" /></div>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="courses.html">Courses</a></li>
+        <img class="headerBreak" src="img/break.png" alt="">
+        <li><a id="activePage" href="courses.html">Courses</a></li>
+        <img class="headerBreak" src="img/break.png" alt="">
         <li><a href="aboutUs.html">About Us</a></li>
-        <li><a href="joinUs.html">Join Us</a></li>
-        <li><a href="myCourses.html">My Courses </a><span id="counterSpan"></span></li>
+        <img class="headerBreak" src="img/break.png" alt="">
+        <li>
+          <a href="myCourses.html">My Courses <span id="counterSpan"></span></a>
+        </li>
       </ul>
     </nav>
+    <a href="joinUs.html"><div>Join Us</div></a>
   </header>
   <div id="sidePanel">
     <nav>
@@ -146,16 +150,32 @@
           </div>
 
         </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <h4>Nerd Academy</h4>
     <div>
-      <i class="fab fa-facebook-square"></i>
-      <i class="fab fa-twitter-square"></i>
-      <i class="fab fa-instagram-square"></i>
-      <i class="fab fa-linkedin"></i>
+      <div class="footerRow__1">
+        <div class="row credits">
+          <h5 class="emptyLine">vvv</h5>
+          <h2>Nerd Academy®</h2>
+        </div>
+        <div class="row">
+          <h5>Designed by</h5>
+          <h2>Nerd Academy.org</h2>
+          <h4>© 2011 – 2021 <a> PRIVACY POLICY</a></h4>
+        </div>
+        <div>
+          <h5>Social media</h5>
+          <div>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 
