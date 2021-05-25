@@ -40,7 +40,7 @@ header nav {
   margin-top: 30px;
   margin-left: 300px;
   display: inline-block;
-  float: right;
+ 
   margin-right: 25px;
 }
 header ul li {
@@ -66,10 +66,19 @@ main {
 }
 
 footer {
+  /* z-index: +100;
+
+  background: var(--mainColor_sub1);
+  height: 80px;
+  color: white;
+  width: 100%;
+
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 6px; */
     z-index: +100;
     
     background-color: lightgrey;
     height: 80px;
+    width: 100%;
   }
 footer h4 {
   padding: 10px;
@@ -77,7 +86,7 @@ footer h4 {
 }
 
 footer div {
-  /* margin-left: 620px; */
+  
   display: block;
   width: fit-content;
   margin-left: auto;

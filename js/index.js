@@ -5,3 +5,9 @@
 //       item.querySelector('.right').style.backgroundImage = 'url('+item.dataset.image+')';
 //     });
 //   });
+
+
+document.getElementById('btn').onclick = function () {
+  window.location.href = 'joinUs.html';
+//   document.getElementById('btn').remove();
+};
