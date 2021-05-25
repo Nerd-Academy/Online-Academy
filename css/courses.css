@@ -50,7 +50,7 @@ main {
   padding-bottom: 13px;
   font-size: 62px;
   font-weight: bolder;
-  background: -webkit-linear-gradient(295deg, rgba(242, 2, 124, 1) 0%, rgba(184, 46, 205, 1) 28%, rgba(31, 74, 222, 1) 58%, rgba(0, 215, 255, 1) 100%);
+  background: -webkit-linear-gradient(295deg, rgba(242, 2, 124, 1) 0%, rgb(205, 27, 233) 28%, rgb(28, 132, 250) 45%, rgb(31, 146, 222) 65%, rgb(0, 255, 213) 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
