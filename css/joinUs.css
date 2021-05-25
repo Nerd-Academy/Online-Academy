@@ -1,52 +1,89 @@
 #JoinUs fieldset
 {
-border :3px solid black;
 padding: 20px;
-margin: 10px;
 position: relative;
-width: 50%;
-margin-left: auto;
+width: 80%;
+margin: 50px;
 margin-right: auto;
+animation: mymove 3s infinite;
+animation-iteration-count: 1;
 }
+@keyframes mymove {
+    from {left: -50px;}
+    to {left: 50px;}
+  }
 
+h2{
+color:  var(--mainColor);
+text-shadow: var(--shadowBig);
+font-weight: 500;
 
+  }
+.icon {
+    padding: 10px;
+    background: var(--mainColor);
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    border: 1 solid black;
+  }
+  #ico{
+    padding: 10px;
+    background: var(--mainColor);
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    border: 1 solid black;
+    
+  }
  #JoinUs fieldset input
 {
     display: inline;
     border-radius: 20px;
-    width: 40%;
+    width: 60%;
     padding: 10px;
     margin-top: 5px;
 
 } 
-
-#JoinUs fieldset label
+#JoinUs fieldset input[type=text]:focus
 {
+ 
+    border-radius: 30px;
+    border: var(--mainColor) solid 5px;
+    width: 70%;
+    padding: 10px;
+    margin-top: 5px;
+
+}
+
+#JoinUs fieldset input[type=email]:focus
+{
+    border-radius: 30px;
+    border:var(--mainColor) solid 5px;
+    width: 70%;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+#JoinUs fieldset input[type=submit]{
     display: inline-block;
-
-    width: 40%;
-    font-size: 20px;
-    font-weight: bold;
-
+    margin-left: 25%;
+    border-radius: 15px;
+    width: 200px;
+    height: 40px;
+    background-color: var(--mainColor);
+    box-shadow: var(--shadowBig);
+    color: white;
+    font-weight: 400;
 }
 
-#submit
-
-{
-    display: inline-block;
-margin-left: 60%;
-border-radius: 15px;
-
-}
-#submit:hover
-{
-    background-color: black;
-    color: blanchedalmond;
+#JoinUs fieldset input[type=submit]:hover{
+    background-color: var( --mainColor_sub1);
 }
 
-
-#JoinUs fieldset legend
-{
-    font-size: 30px;
-    font-weight: bold;
+#formCont{
+box-shadow: var(--shadowBig);
+width: 50%;
+margin-left: auto;
+margin-right: auto;
 }

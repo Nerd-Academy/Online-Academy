@@ -10,9 +10,8 @@ let user = [];
 //  let message =`Welcom ${userName} To Our Academy`;
 
 
-function User(firstname, lastname, email, major) {
+function User(firstname, email, major) {
   this.firstname = firstname;
-  this.lastname = lastname;
   this.email = email;
   this.major = major;
   user.push(this);
@@ -26,13 +25,12 @@ function Adduser(event) {
 
   event.preventDefault();
 
-  let newUserFirstName = event.target.firstname.value;
-  let newUseLastName = event.target.lastname.value;
+  let newUserFirstName = event.target.fulltname.value;
   let newUserEmail = event.target.email.value;
   let newUserMajor = event.target.major.value;
 
 
-  let newUser = new User(newUserFirstName, newUseLastName, newUserEmail, newUserMajor);
+  let newUser = new User(newUserFirstName, newUserEmail, newUserMajor);
   console.log(newUser);
   SettingUserInformation();
 }
