@@ -44,3 +44,8 @@ function GettingCourses()
 
 
 setCounterIntoHtml();
+
+if(counter==0)
+{
+  document.getElementById('totalprise').remove();
+}
