@@ -1,6 +1,7 @@
 :root {
   --shadow: rgba(0, 0, 0, 0.411) 0px 2px 4px;
   --shadowBig: rgba(0, 0, 0, 0.611) 0px 4px 8px;
+  --radiusFull: 999px;
   --radius: 20px;
   --radiusBig: 40px;
   --gradientOne: linear-gradient(343deg, rgba(247, 110, 185, 0.5) 20%, rgb(235, 49, 210) 100%);
@@ -201,6 +202,9 @@ header > a > div {
   position: relative;
   bottom: 1px;
   color: rgba(255, 255, 255, 1);
+}
+header a {
+  color: var(--mainColor);
 }
 header a:visited {
   text-decoration: none;
