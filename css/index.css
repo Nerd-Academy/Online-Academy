@@ -37,9 +37,10 @@ main {
   
 }
 #sidePanel li.active {
-  background-color: #4CAF50;
-  color: white;
+  background-color: #cabbbb;
+  color: rgb(206, 33, 33);
 }
+
 #sidePanel  li a:hover {
   background-color: #555;
   color: white;
