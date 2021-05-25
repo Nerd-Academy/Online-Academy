@@ -1,343 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories</title>
+    <!-- <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" /> -->
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Categories</title>
-  <!-- <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" /> -->
+    <script src="https://kit.fontawesome.com/d411685a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
+    <link rel="stylesheet" href="libraries/splide-2.4.21/dist/css/splide.min.css" />
 
-  <script src="https://kit.fontawesome.com/d411685a29.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
-  <link rel="stylesheet" href="libraries/splide-2.4.21/dist/css/splide.min.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/courses.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/courses.css" />
-</head>
-
-<body>
-  <header>
-    <h1></h1>
-    <img src="https://icon-library.com/images/nerd-icon-png/nerd-icon-png-26.jpg " width="50px" alt="logo" />
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="aboutUs.html">About Us</a></li>
-        <li><a href="joinUs.html">Join Us</a></li>
-        <li><a href="myCourses.html">My Courses </a><span id="counterSpan"></span></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="slideShow" class="splide">
-      <div class="splide__track">
-        <ul class="splide__list slideShow">
-          <li class="splide__slide"><img src="img/categories/study_1.jpg" alt="" /></li>
-          <li class="splide__slide"><img src="img/categories/study_1.jpg" alt="" /></li>
-          <li class="splide__slide"><img src="img/categories/study_1.jpg" alt="" /></li>
+  <body>
+    <header>
+      <div><img src="https://icon-library.com/images/nerd-icon-png/nerd-icon-png-26.jpg " width="50px" alt="logo" /></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <img class="headerBreak" src="img/break.png" alt="">
+          <li><a id="activePage" href="courses.html">Courses</a></li>
+          <img class="headerBreak" src="img/break.png" alt="">
+          <li><a href="aboutUs.html">About Us</a></li>
+          <img class="headerBreak" src="img/break.png" alt="">
+          <li>
+            <a href="myCourses.html">My Courses <span id="counterSpan"></span></a>
+          </li>
         </ul>
-      </div>
-    </section>
-    <section id="courses">
-      <!-- <div id="ourCoursesTitles">
-        <h1>Our courses</h1>
-        <div>
-          <i class="fas fa-arrow-right"></i>
-        </div> 
-      </div> -->
-      <section id="card__1" class="courseCardContainer">
-        <div class="courseCardContainerShadow">
-          <div class="splideCornerAnimationContainer">
-            <div id="splideAnimOne__1"></div>
-            <div id="splideAnimTwo__1">×</div>
-            <div id="splideAnimThree__1"></div>
-          </div>
-          <div>
-            <h2 class="courseCardTitle">Mathematics</h2>
-          </div>
-          <div class="courseFlex">
-            <img class="courseImg" src="img/categories/math_paper.jpg" alt="" />
+      </nav>
+      <a href="joinUs.html"><div>Join Us</div></a>
+    </header>
+    <main>
+      <section id="slideShow" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list slideShow">
+            <li class="splide__slide"><img src="img/courses/study_1.jpg" alt="" /></li>
+            <li class="splide__slide"><img src="img/courses/study_1.jpg" alt="" /></li>
+            <li class="splide__slide"><img src="img/courses/study_1.jpg" alt="" /></li>
+          </ul>
+        </div>
+      </section>
+      <section id="courses">
+        <section id="card__1" class="courseCardContainer">
+          <div class="courseCardContainerShadow">
+            <div class="splideCornerAnimationContainer">
+              <div id="splideAnimOne__1"></div>
+              <div id="splideAnimTwo__1">×</div>
+              <div id="splideAnimThree__1"></div>
+            </div>
+            <div>
+              <h2 id="card__1__title" class="courseCardTitle">Mathematics</h2>
+            </div>
+            <div class="courseFlex">
+              <img class="courseImg" src="img/courses/math_paper.jpg" alt="" />
 
-            <div class="courseSlidesContainer splide">
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide coursesSlides">
-                    <form class="course">
-                      <div class="slideImgDiv">
+              <div class="courseSlidesContainer splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide coursesSlides">
+                      <form class="course">
+                        <div class="slideImgDiv">
+                          <img src="img/courses/calculator_1.jpg" alt="" />
+                          <div class="dimOverlay"></div>
+                          <h2 class="slideImgTitle">Math 101 - complete beginners</h2>
+                          <div class="hoverJoinusOverlay">
+                            <button>
+                              <div class="hoverJoinUsButton">Join Course</div>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="instructorAndCourseDetails">
+                          <div class="instructorImgAndName">
+                            <img class="instructorImg" src="img/courses/people/man_1.jpg" alt="" />
+                            <h2>Dr. David John</h2>
+                          </div>
+                          <div>
+                            <p>This course is a great start point for anyone interested in re-igniting their math passion! starts from basic concepts and goes into intermediate ones, with small-bite and easy to understand videos, with time and effort you're sure to succeed.</p>
+                          </div>
+                          <div class="priceAndHours">
+                            <div><span>30 Hours</span></div>
+                            <div><span> 100 JOD</span></div>
+                          </div>
+                        </div>
+                      </form>
+                    </li>
 
-                        <img src="img/categories/calculator_1.jpg" alt="" />
-                        <div class="dimOverlay"></div>
-                        <h2 class="slideImgTitle">Math 101 - complete beginners</h2>
-                        <div class="hoverJoinusOverlay">
-                          <button>
-                            <div class="hoverJoinUsButton">Join Course</div>
+                    <li class="splide__slide coursesSlides">
+                      <form class="course">
+                        <div class="slideImgDiv">
+                          <img src="img/courses/wood_bricks.jpg" alt="" />
+                          <div class="dimOverlay"></div>
+                          <h2 class="slideImgTitle">Introduction to Logic</h2>
+                          <div class="hoverJoinusOverlay">
+                            <button>
+                              <div class="hoverJoinUsButton">Join Course</div>
+                            </button>
+                          </div>
                         </div>
-                        </button>
-                      </div>
-                      <div class="instructorAndCourseDetails">
-                        <div class="instructorImgAndName">
-                          <img class="instructorImg" src="img/categories/people/man_1.jpg" alt="" />
-                          <h2>
-                            Dr. David John
-                          </h2>
+                        <div class="instructorAndCourseDetails">
+                          <div class="instructorImgAndName">
+                            <img class="instructorImg" src="img/courses/people/man_2.jpg" alt="" />
+                            <h2>
+                              Dr. Jameel <br />
+                              Muhammad
+                            </h2>
+                          </div>
+                          <div>
+                            <p>A basic introductory course to logic and it it's place in mathematics, tells you how think and what to think without boring you or hitting you with a brick-wall, a perfect course to set your logic right.</p>
+                          </div>
+                          <div class="priceAndHours">
+                            <div><span>30 Hours</span></div>
+                            <div><span> 100 JOD</span></div>
+                          </div>
                         </div>
-                        <div>
-                          <p>This course is a great start point for anyone interested in re-igniting their math passion!
-                            starts from basic concepts and goes into intermediate ones, with small-bite and easy to
-                            understand videos, with time and effort you're sure to succeed.</p>
+                      </form>
+                    </li>
+                    <li class="splide__slide coursesSlides">
+                      <form class="course">
+                        <div class="slideImgDiv">
+                          <img src="img/courses/math_paper.jpg" alt="" />
+                          <div class="dimOverlay"></div>
+                          <h2 class="slideImgTitle">Introduction to Mathematical Thinking</h2>
+                          <div class="hoverJoinusOverlay">
+                            <button>
+                              <div class="hoverJoinUsButton">Join Course</div>
+                            </button>
+                          </div>
                         </div>
-                        <div>
-                          <div><span>30 Hours</span></div>
-                          <div><span> 100 JOD</span></div>
+                        <div class="instructorAndCourseDetails">
+                          <div class="instructorImgAndName">
+                            <img class="instructorImg" src="img/courses/people/man_3.jpg" alt="" />
+                            <h2>
+                              Omar <br />
+                              Soltani
+                            </h2>
+                          </div>
+                          <div>
+                            <p>Want to know how to think? well this course can't tell you that, but what it can tell you is how mathematicians think, going through their boring but exciting though process in a way that allows you to actually follow through their complicated but logical way of thinking.</p>
+                          </div>
+                          <div class="priceAndHours">
+                            <div><span>30 Hours</span></div>
+                            <div><span> 100 JOD</span></div>
+                          </div>
                         </div>
-                      </div>
-                    </form>
-                  </li>
-
-                  <li class="splide__slide coursesSlides">
-                    <form class="course">
-
-                      <div class="slideImgDiv">
-                        <img src="img/categories/wood_bricks.jpg" alt="" />
-                        <div class="dimOverlay"></div>
-                        <h2 class="slideImgTitle">Introduction to Logic</h2>
-                        <div class="hoverJoinusOverlay">
-                          <button>
-                            <div class="hoverJoinUsButton">Join Course</div>
-                        </div>
-                        </button>
-                      </div>
-                      <div class="instructorAndCourseDetails">
-                        <div class="instructorImgAndName">
-                          <img class="instructorImg" src="img/categories/people/man_2.jpg" alt="" />
-                          <h2>
-                            Dr. Jameel <br />
-                            Muhammad
-                          </h2>
-                        </div>
-                        <div>
-                          <p>A basic introductory course to logic and it it's place in mathematics, tells you how think
-                            and what to think without boring you or hitting you with a brick-wall, a perfect course to
-                            set
-                            your logic right.</p>
-                        </div>
-                        <div>
-                          <div><span>30 Hours</span></div>
-                          <div><span> 100 JOD</span></div>
-                        </div>
-                      </div>
-                    </form>
-                  </li>
-                  <li class="splide__slide coursesSlides">
-                    <form class="course">
-
-                      <div class="slideImgDiv">
-                        <img src="img/categories/math_paper.jpg" alt="" />
-                        <div class="dimOverlay"></div>
-                        <h2 class="slideImgTitle">Introduction to Mathematical Thinking</h2>
-                        <div class="hoverJoinusOverlay">
-                          <button>
-                            <div class="hoverJoinUsButton">Join Course</div>
-                        </div>
-                        </button>
-                      </div>
-                      <div class="instructorAndCourseDetails">
-                        <div class="instructorImgAndName">
-                          <img class="instructorImg" src="img/categories/people/man_3.jpg" alt="" />
-                          <h2>
-                            Omar <br />
-                            Soltani
-                          </h2>
-                        </div>
-                        <div>
-                          <p>Want to know how to think? well this course can't tell you that, but what it can tell you
-                            is
-                            how mathematicians think, going through their boring but exciting though process in a way
-                            that
-                            allows you to actually follow through their complicated but logical way of thinking.</p>
-                        </div>
-                        <div>
-                          <div><span>30 Hours</span></div>
-                          <div><span> 100 JOD</span></div>
-                        </div>
-                      </div>
-                    </form>
-                  </li>
-                </ul>
+                      </form>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+        <section id="card__2" class="courseCardContainer">
+          <div class="courseCardContainerShadow">
+            <div class="splideCornerAnimationContainer">
+              <div id="splideAnimOne__2"></div>
+              <div id="splideAnimTwo__2"></div>
+            </div>
+            <div>
+              <h2 id="card__2__title" class="courseCardTitle">Design</h2>
+            </div>
+            <div class="courseFlex">
+              <img class="courseImg" src="img/courses/laptop_graphic.jpg" alt="" />
 
-      </section>
-      <section id="card__2" class="courseCardContainer">
-        <div class="courseCardContainerShadow">
-          <div class="splideCornerAnimationContainer">
-            <div id="splideAnimOne__2"></div>
-            <div id="splideAnimTwo__2"></div>
-          </div>
-          <div>
-            <h2 class="courseCardTitle">Design</h2>
-          </div>
-          <div class="courseFlex">
-            <img class="courseImg" src="img/categories/laptop_graphic.jpg" alt="" />
-
-            <div class="courseSlidesContainer splide">
-              <div class="splide__track">
-                <ul class="splide__list">
-                  <li class="splide__slide coursesSlides">
-                    <form class="course">
-
-                      <div class="slideImgDiv">
-                        <img src="img/categories/study_1.jpg" alt="" />
-                        <div class="dimOverlay"></div>
-                        <h2 class="slideImgTitle">Fundamentals of Graphic Design</h2>
-                        <div class="hoverJoinusOverlay">
-                          <button>
-                            <div class="hoverJoinUsButton">Join Course</div>
+              <div class="courseSlidesContainer splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide coursesSlides">
+                      <form class="course">
+                        <div class="slideImgDiv">
+                          <img src="img/courses/study_1.jpg" alt="" />
+                          <div class="dimOverlay"></div>
+                          <h2 class="slideImgTitle">Fundamentals of Graphic Design</h2>
+                          <div class="hoverJoinusOverlay">
+                            <button>
+                              <div class="hoverJoinUsButton">Join Course</div>
+                            </button>
+                          </div>
                         </div>
-                        </button>
-                      </div>
-                      <div class="instructorAndCourseDetails">
-                        <div class="instructorImgAndName">
-                          <img class="instructorImg" src="img/categories/people/man_1.jpg" alt="" />
-                          <h2>
-                            Dr. Muhammed <br />
-                            Hassan
-                          </h2>
-                        </div>
-                        <div>
-                          <input type="hidden" value="This course is a great start point for anyone interested in re-igniting their math passion!
+                        <div class="instructorAndCourseDetails">
+                          <div class="instructorImgAndName">
+                            <img class="instructorImg" src="img/courses/people/man_1.jpg" alt="" />
+                            <h2>
+                              Dr. Muhammed <br />
+                              Hassan
+                            </h2>
+                          </div>
+                          <div>
+                            <input
+                              type="hidden"
+                              value="This course is a great start point for anyone interested in re-igniting their math passion!
                           starts from basic concepts and goes into intermediate ones, with small-bite and easy to
-                          understand videos, with time and effort you're sure to succeed." >
-                          <p>This course is a great start point for anyone interested in re-igniting their math passion!
-                            starts from basic concepts and goes into intermediate ones, with small-bite and easy to
-                            understand videos, with time and effort you're sure to succeed.</p>
+                          understand videos, with time and effort you're sure to succeed."
+                            />
+                            <p>This course is a great start point for anyone interested in re-igniting their math passion! starts from basic concepts and goes into intermediate ones, with small-bite and easy to understand videos, with time and effort you're sure to succeed.</p>
+                          </div>
+                          <div class="priceAndHours">
+                            <div><span>30 Hours</span></div>
+                            <div><span> 100 JOD</span></div>
+                          </div>
                         </div>
-                        <div>
-                          <div><span>30 Hours</span></div>
-                          <div><span> 100 JOD</span></div>
-                        </div>
-                      </div>
-                    </form>
-                  </li>
+                      </form>
+                    </li>
 
-                  <li class="splide__slide coursesSlides">
-                    <form class="course">
-
-                      <div class="slideImgDiv">
-                        <img src="img/categories/rainbow_planks.jpeg" alt="" />
-                        <div class="dimOverlay"></div>
-                        <h2 class="slideImgTitle">Introduction to Color</h2>
-                        <div class="hoverJoinusOverlay">
-                          <button>
-                            <div class="hoverJoinUsButton">Join Course</div>
+                    <li class="splide__slide coursesSlides">
+                      <form class="course">
+                        <div class="slideImgDiv">
+                          <img src="img/courses/rainbow_planks.jpeg" alt="" />
+                          <div class="dimOverlay"></div>
+                          <h2 class="slideImgTitle">Introduction to Color</h2>
+                          <div class="hoverJoinusOverlay">
+                            <button>
+                              <div class="hoverJoinUsButton">Join Course</div>
+                            </button>
+                          </div>
                         </div>
-                        </button>
-                      </div>
-                      <div class="instructorAndCourseDetails">
-                        <div class="instructorImgAndName">
-                          <img class="instructorImg" src="img/categories/people/man_2.jpg" alt="" />
-                          <h2>
-                            Amer <br />
-                            Sharara
-                          </h2>
+                        <div class="instructorAndCourseDetails">
+                          <div class="instructorImgAndName">
+                            <img class="instructorImg" src="img/courses/people/man_2.jpg" alt="" />
+                            <h2>
+                              Amer <br />
+                              Sharara
+                            </h2>
+                          </div>
+                          <div>
+                            <p>A basic introductory course to logic and it it's place in mathematics, tells you how think and what to think without boring you or hitting you with a brick-wall, a perfect course to set your logic right.</p>
+                          </div>
+                          <div class="priceAndHours">
+                            <div><span>30 Hours</span></div>
+                            <div><span> 100 JOD</span></div>
+                          </div>
                         </div>
-                        <div>
-                          <p>A basic introductory course to logic and it it's place in mathematics, tells you how think
-                            and what to think without boring you or hitting you with a brick-wall, a perfect course to
-                            set
-                            your logic right.</p>
+                      </form>
+                    </li>
+                    <li class="splide__slide coursesSlides">
+                      <form class="course">
+                        <div class="slideImgDiv">
+                          <img src="img/courses/math_paper.jpg" alt="" />
+                          <div class="dimOverlay"></div>
+                          <h2 class="slideImgTitle">Introduction to Mathematical Thinking</h2>
+                          <div class="hoverJoinusOverlay">
+                            <button>
+                              <div class="hoverJoinUsButton">Join Course</div>
+                            </button>
+                          </div>
                         </div>
-                        <div>
-                          <div><span>30 Hours</span></div>
-                          <div><span> 100 JOD</span></div>
+                        <div class="instructorAndCourseDetails">
+                          <div class="instructorImgAndName">
+                            <img class="instructorImg" src="img/courses/people/man_3.jpg" alt="" />
+                            <h2>
+                              Omar <br />
+                              Soltani
+                            </h2>
+                          </div>
+                          <div>
+                            <p>Want to know how to think? well this course can't tell you that, but what it can tell you is how mathematicians think, going through their boring but exciting though process in a way that allows you to actually follow through their complicated but logical way of thinking.</p>
+                          </div>
+                          <div class="priceAndHours">
+                            <div><span>30 Hours</span></div>
+                            <div><span> 100 JOD</span></div>
+                          </div>
                         </div>
-
-                      </div>
-                    </form>
-                  </li>
-                  <li class="splide__slide coursesSlides">
-                    <form class="course">
-
-                      <div class="slideImgDiv">
-                        <img src="img/categories/math_paper.jpg" alt="" />
-                        <div class="dimOverlay"></div>
-                        <h2 class="slideImgTitle">Introduction to Mathematical Thinking</h2>
-                        <div class="hoverJoinusOverlay">
-                          <button>
-                            <div class="hoverJoinUsButton">Join Course</div>
-                        </div>
-                        </button>
-                      </div>
-                      <div class="instructorAndCourseDetails">
-                        <div class="instructorImgAndName">
-                          <img class="instructorImg" src="img/categories/people/man_3.jpg" alt="" />
-                          <h2>
-                            Omar <br />
-                            Soltani
-                          </h2>
-                        </div>
-                        <div>
-                          <p>Want to know how to think? well this course can't tell you that, but what it can tell you
-                            is
-                            how mathematicians think, going through their boring but exciting though process in a way
-                            that
-                            allows you to actually follow through their complicated but logical way of thinking.</p>
-                        </div>
-                        <div>
-                          <div><span>30 Hours</span></div>
-                          <div><span> 100 JOD</span></div>
-                        </div>
-                      </div>
-                    </form>
-                  </li>
-                </ul>
+                      </form>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
+        <section id="card__3" class="courseCardContainer">
+          <div class="courseCardContainerShadow">
+            <div class="splideCornerAnimationContainer">
+              <div id="splideAnimOne__3"></div>
+              <div id="splideAnimTwo__3">×</div>
+              <div id="splideAnimThree__3"></div>
+            </div>
+            <div>
+              <h2 id="card__3__title" class="courseCardTitle">Languages</h2>
+            </div>
+            <div class="courseFlex">
+              <img class="courseImg" src="img/courses/math_paper.jpg" alt="" />
 
-      </section>
-      <!-- <section id="designCardContainer">
+              <div class="courseSlidesContainer splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide coursesSlides">
+                      <form class="course">
+                        <div class="slideImgDiv">
+                          <img src="img/courses/calculator_1.jpg" alt="" />
+                          <div class="dimOverlay"></div>
+                          <h2 class="slideImgTitle">Math 101 - complete beginners</h2>
+                          <div class="hoverJoinusOverlay">
+                            <button>
+                              <div class="hoverJoinUsButton">Join Course</div>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="instructorAndCourseDetails">
+                          <div class="instructorImgAndName">
+                            <img class="instructorImg" src="img/courses/people/man_1.jpg" alt="" />
+                            <h2>Dr. David John</h2>
+                          </div>
+                          <div>
+                            <p>This course is a great start point for anyone interested in re-igniting their math passion! starts from basic concepts and goes into intermediate ones, with small-bite and easy to understand videos, with time and effort you're sure to succeed.</p>
+                          </div>
+                          <div class="priceAndHours">
+                            <div><span>30 Hours</span></div>
+                            <div><span> 100 JOD</span></div>
+                          </div>
+                        </div>
+                      </form>
+                    </li>
+
+                    <li class="splide__slide coursesSlides">
+                      <form class="course">
+                        <div class="slideImgDiv">
+                          <img src="img/courses/wood_bricks.jpg" alt="" />
+                          <div class="dimOverlay"></div>
+                          <h2 class="slideImgTitle">Introduction to Logic</h2>
+                          <div class="hoverJoinusOverlay">
+                            <button>
+                              <div class="hoverJoinUsButton">Join Course</div>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="instructorAndCourseDetails">
+                          <div class="instructorImgAndName">
+                            <img class="instructorImg" src="img/courses/people/man_2.jpg" alt="" />
+                            <h2>
+                              Dr. Jameel <br />
+                              Muhammad
+                            </h2>
+                          </div>
+                          <div>
+                            <p>A basic introductory course to logic and it it's place in mathematics, tells you how think and what to think without boring you or hitting you with a brick-wall, a perfect course to set your logic right.</p>
+                          </div>
+                          <div class="priceAndHours">
+                            <div><span>30 Hours</span></div>
+                            <div><span> 100 JOD</span></div>
+                          </div>
+                        </div>
+                      </form>
+                    </li>
+                    <li class="splide__slide coursesSlides">
+                      <form class="course">
+                        <div class="slideImgDiv">
+                          <img src="img/courses/math_paper.jpg" alt="" />
+                          <div class="dimOverlay"></div>
+                          <h2 class="slideImgTitle">Introduction to Mathematical Thinking</h2>
+                          <div class="hoverJoinusOverlay">
+                            <button>
+                              <div class="hoverJoinUsButton">Join Course</div>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="instructorAndCourseDetails">
+                          <div class="instructorImgAndName">
+                            <img class="instructorImg" src="img/courses/people/man_3.jpg" alt="" />
+                            <h2>
+                              Omar <br />
+                              Soltani
+                            </h2>
+                          </div>
+                          <div>
+                            <p>Want to know how to think? well this course can't tell you that, but what it can tell you is how mathematicians think, going through their boring but exciting though process in a way that allows you to actually follow through their complicated but logical way of thinking.</p>
+                          </div>
+                          <div class="priceAndHours">
+                            <div><span>30 Hours</span></div>
+                            <div><span> 100 JOD</span></div>
+                          </div>
+                        </div>
+                      </form>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="card__4" class="courseCardContainer">
+          <div class="courseCardContainerShadow">
+            <div class="splideCornerAnimationContainer">
+              <div id="splideAnimOne__4"></div>
+              <div id="splideAnimTwo__4">×</div>
+              <div id="splideAnimThree__4"></div>
+            </div>
+            <div>
+              <h2 id="card__4__title" class="courseCardTitle">Information technology</h2>
+            </div>
+            <div class="courseFlex">
+              <img class="courseImg" src="img/courses/math_paper.jpg" alt="" />
+
+              <div class="courseSlidesContainer splide">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide coursesSlides">
+                      <form class="course">
+                        <div class="slideImgDiv">
+                          <img src="img/courses/calculator_1.jpg" alt="" />
+                          <div class="dimOverlay"></div>
+                          <h2 class="slideImgTitle">Math 101 - complete beginners</h2>
+                          <div class="hoverJoinusOverlay">
+                            <button>
+                              <div class="hoverJoinUsButton">Join Course</div>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="instructorAndCourseDetails">
+                          <div class="instructorImgAndName">
+                            <img class="instructorImg" src="img/courses/people/man_1.jpg" alt="" />
+                            <h2>Dr. David John</h2>
+                          </div>
+                          <div>
+                            <p>This course is a great start point for anyone interested in re-igniting their math passion! starts from basic concepts and goes into intermediate ones, with small-bite and easy to understand videos, with time and effort you're sure to succeed.</p>
+                          </div>
+                          <div class="priceAndHours">
+                            <div><span>30 Hours</span></div>
+                            <div><span> 100 JOD</span></div>
+                          </div>
+                        </div>
+                      </form>
+                    </li>
+
+                    <li class="splide__slide coursesSlides">
+                      <form class="course">
+                        <div class="slideImgDiv">
+                          <img src="img/courses/wood_bricks.jpg" alt="" />
+                          <div class="dimOverlay"></div>
+                          <h2 class="slideImgTitle">Introduction to Logic</h2>
+                          <div class="hoverJoinusOverlay">
+                            <button>
+                              <div class="hoverJoinUsButton">Join Course</div>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="instructorAndCourseDetails">
+                          <div class="instructorImgAndName">
+                            <img class="instructorImg" src="img/courses/people/man_2.jpg" alt="" />
+                            <h2>
+                              Dr. Jameel <br />
+                              Muhammad
+                            </h2>
+                          </div>
+                          <div>
+                            <p>A basic introductory course to logic and it it's place in mathematics, tells you how think and what to think without boring you or hitting you with a brick-wall, a perfect course to set your logic right.</p>
+                          </div>
+                          <div class="priceAndHours">
+                            <div><span>30 Hours</span></div>
+                            <div><span> 100 JOD</span></div>
+                          </div>
+                        </div>
+                      </form>
+                    </li>
+                    <li class="splide__slide coursesSlides">
+                      <form class="course">
+                        <div class="slideImgDiv">
+                          <img src="img/courses/math_paper.jpg" alt="" />
+                          <div class="dimOverlay"></div>
+                          <h2 class="slideImgTitle">Introduction to Mathematical Thinking</h2>
+                          <div class="hoverJoinusOverlay">
+                            <button>
+                              <div class="hoverJoinUsButton">Join Course</div>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="instructorAndCourseDetails">
+                          <div class="instructorImgAndName">
+                            <img class="instructorImg" src="img/courses/people/man_3.jpg" alt="" />
+                            <h2>
+                              Omar <br />
+                              Soltani
+                            </h2>
+                          </div>
+                          <div>
+                            <p>Want to know how to think? well this course can't tell you that, but what it can tell you is how mathematicians think, going through their boring but exciting though process in a way that allows you to actually follow through their complicated but logical way of thinking.</p>
+                          </div>
+                          <div class="priceAndHours">
+                            <div><span>30 Hours</span></div>
+                            <div><span> 100 JOD</span></div>
+                          </div>
+                        </div>
+                      </form>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <section id="designCardContainer">
           <div id="designCardContainerShadow">
             <div>
               <h2>Design</h2>
             </div>
             <div id="designFlex">
-              <img id="designImg" src="img/categories/design_main.jpeg" alt="" />
+              <img id="designImg" src="img/courses/design_main.jpeg" alt="" />
 
               <div class="courseSlides splide">
                 <div class="splide__track">
                   <ul class="splide__list">
-                    <li class="splide__slide"><img src="img/categories/study_1.jpg" alt="" /></li>
-                    <li class="splide__slide"><img src="img/categories/study_1.jpg" alt="" /></li>
-                    <li class="splide__slide"><img src="img/categories/study_1.jpg" alt="" /></li>
+                    <li class="splide__slide"><img src="img/courses/study_1.jpg" alt="" /></li>
+                    <li class="splide__slide"><img src="img/courses/study_1.jpg" alt="" /></li>
+                    <li class="splide__slide"><img src="img/courses/study_1.jpg" alt="" /></li>
                   </ul>
                 </div>
               </div>
             </div>
           </div>
         </section> -->
-    </section>
-  </main>
-  <footer>
-    <h4>Nerd Academy</h4>
-    <div>
-      <i class="fab fa-facebook-square"></i>
-      <i class="fab fa-twitter-square"></i>
-      <i class="fab fa-instagram-square"></i>
-      <i class="fab fa-linkedin"></i>
-    </div>
-  </footer>
-  <script src="js/app.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-  <script src="js/courses.js"></script>
-  <!-- <script src="js/myCourses.js"></script> -->
-
-</body>
-
+      </section>
+    </main>
+    <footer>
+      <div>
+        <div class="footerRow__1">
+          <div class="row credits">
+            <h5 class="emptyLine">vvv</h5>
+            <h2>Nerd Academy®</h2>
+          </div>
+          <div class="row">
+            <h5>Designed by</h5>
+            <h2>Nerd Academy.org</h2>
+            <h4>© 2011 – 2021 <a> PRIVACY POLICY</a></h4>
+          </div>
+          <div>
+            <h5>Social media</h5>
+            <div>
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-instagram-square"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="js/courses.js"></script>
+    <!-- <script src="js/myCourses.js"></script> -->
+  </body>
 </html>
