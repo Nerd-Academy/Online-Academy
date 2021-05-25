@@ -4,4 +4,3 @@
 //       item.querySelector('.left').style.backgroundImage = 'url('+item.dataset.image+')';
 //       item.querySelector('.right').style.backgroundImage = 'url('+item.dataset.image+')';
 //     });
-//   });
