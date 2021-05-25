@@ -47,9 +47,13 @@ header {
 
   display: flex;
   flex-direction: row;
-
-  justify-content: space-between;
-  align-items: center;
+}
+header nav {
+  margin-top: 30px;
+  margin-left: 300px;
+  display: inline-block;
+ 
+  margin-right: 25px;
 }
 .headerBreak {
   position: relative;
@@ -86,75 +90,37 @@ header > nav > ul > li::after {
 header > nav > ul > :last-child {
   margin-right: 0px;
 }
-
-header > nav > ul > li > a {
+main {
+    margin-top: 100px;
+    min-height: 500px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
-header > nav > ul > li > a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2.3pt;
-  left: 50%;
-  position: absolute;
-  background: var(--mainColor);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-  
-}
-header > nav > ul > li > a:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
-#activePage:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2.3pt;
-  left: 50%;
-  position: absolute;
-  background: var(--mainColor);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 100%; 
-  left: 0; 
+footer {
+  /* z-index: +100;
 
-  border-radius: 50px;
-  /* opacity: 0.8; */
-}
-
-
-
-/* header > nav > ul > li > a:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2.3pt;
-  position: absolute;
-  background: var(--mainColor);
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  background: var(--mainColor_sub1);
+  height: 80px;
+  color: white;
   width: 100%;
 
-  opacity: 0;
-  top: 113%;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 4px 6px; */
+    z-index: +100;
+    
+    background-color: lightgrey;
+    height: 80px;
+    width: 100%;
+  }
+footer h4 {
+  padding: 10px;
+  text-align: center;
+}
+
+footer div {
   
-  transition: 0.2s ease;
-}
-header > nav > ul > li > a:hover:after { 
-  width: 100%; 
-
-  opacity: 1;
-  top: 100%;
-}
-
-
-#activePage:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
   display: block;
   height: 2.3pt;
   left: 50%;
