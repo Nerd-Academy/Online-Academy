@@ -5,13 +5,21 @@ position: relative;
 width: 80%;
 margin: 50px;
 margin-right: auto;
-animation: mymove 3s infinite;
+animation: mymove 2s infinite;
 animation-iteration-count: 1;
 }
 @keyframes mymove {
-    from {left: -50px;}
-    to {left: 50px;}
+    0% {left: -50px;}
+    50% {left: 50px;}
+    100%{left: 0px;}
   }
+  #formCont{
+    box-shadow: var(--shadowBig);
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    }
 
 h2{
 color:  var(--mainColor);
@@ -81,9 +89,3 @@ font-weight: 500;
     background-color: var( --mainColor_sub1);
 }
 
-#formCont{
-box-shadow: var(--shadowBig);
-width: 50%;
-margin-left: auto;
-margin-right: auto;
-}
