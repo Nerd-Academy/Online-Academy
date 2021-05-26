@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 let courseCart = [];
 let returnedCourse = [];
@@ -35,28 +35,37 @@ for (var i = 0, len = ids.length; i < len; i++) {
   let id = ids[i];
   id.setAttribute("id", `newId${i}`);
   let formEl = document.getElementById(`newId${i}`);
+
   formEl.addEventListener("submit", addCourse);
 }
 
 function addCourse(event) {
-  event.preventDefault();
-  increaseAndSetCounterToHtmlAndLS(); 
+  let userOnLS = JSON.parse(localStorage.getItem("User"));
+  if (userOnLS === null) {
+    window.location.href = "../joinUs.html";
+    console.log(`window.location.href = '../joinUs.html' = `, (window.location.href = "../joinUs.html"));
 
-  let instructorName = event.target.children[1].children[0].children[1].innerText;
+    event.preventDefault();
+    // settingCourses();
+  } else {
+    event.preventDefault();
+    increaseAndSetCounterToHtmlAndLS();
 
-  let courseName = event.target.children[0].children[2].innerText;
+    let instructorName = event.target.children[1].children[0].children[1].innerText;
 
-  let courseImgSrc = event.target.children[0].children[0].src;
+    let courseName = event.target.children[0].children[2].innerText;
 
-  let instructorImg = event.target.children[1].children[0].children[0].src;
+    let courseImgSrc = event.target.children[0].children[0].src;
 
-  let courseHours = event.target.children[1].children[2].children[0].innerText;
+    let instructorImg = event.target.children[1].children[0].children[0].src;
 
-  let coursePrise = event.target.children[1].children[2].children[1].innerText;
+    let courseHours = event.target.children[1].children[2].children[0].innerText;
 
-  let newCourse = new MyCourses(courseName, courseImgSrc, instructorName, instructorImg, courseHours, coursePrise);
-  settingCourses();
+    let coursePrise = event.target.children[1].children[2].children[1].innerText;
 
+    let newCourse = new MyCourses(courseName, courseImgSrc, instructorName, instructorImg, courseHours, coursePrise);
+    settingCourses();
+  }
 }
 
 function settingCourses() {

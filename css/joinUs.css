@@ -1,92 +1,110 @@
-#JoinUs fieldset
-{
-padding: 20px;
-position: relative;
-width: 80%;
-margin: 50px;
-margin-right: auto;
-animation: mymove 2s infinite;
-animation-iteration-count: 1;
+#JoinUs fieldset {
+  padding: 20px;
+  position: relative;
+  width: 80%;
+  margin: 50px;
+  margin-right: auto;
+  animation: mymove 2s infinite;
+  animation-iteration-count: 1;
 }
 @keyframes mymove {
-    0% {left: -50px;}
-    50% {left: 50px;}
-    100%{left: 0px;}
+  0% {
+    left: -50px;
   }
-  #formCont{
-    box-shadow: var(--shadowBig);
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 200px;
-    }
-
-h2{
-color:  var(--mainColor);
-text-shadow: var(--shadowBig);
-font-weight: 500;
-
+  50% {
+    left: 50px;
   }
+  100% {
+    left: 0px;
+  }
+}
+#formCont {
+  box-shadow: var(--shadowBig);
+  border-radius: var(--radiusBig);
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+}
+
+fieldset h2 {
+  color: var(--mainColor);
+  text-shadow: var(--shadow);
+  font-weight: 500;
+}
 .icon {
-    padding: 10px;
-    background: var(--mainColor);
-    color: white;
-    min-width: 50px;
-    text-align: center;
-    border: 1 solid black;
-  }
-  #ico{
-    padding: 10px;
-    background: var(--mainColor);
-    color: white;
-    min-width: 50px;
-    text-align: center;
-    border: 1 solid black;
-    
-  }
- #JoinUs fieldset input
-{
-    display: inline;
-    border-radius: 20px;
-    width: 60%;
-    padding: 10px;
-    margin-top: 5px;
+  padding: 10px;
+  background: var(--mainColor);
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  border: 1 solid black;
+}
+#ico {
+  padding: 10px;
+  background: var(--mainColor);
+  color: white;
+  min-width: 50px;
+  text-align: center;
+  border: 1 solid black;
+}
+#JoinUs fieldset input {
+  display: inline;
+  border: var(--mainColor) solid 3px;
+  border-radius: 20px;
+  width: 50%;
+  margin-left: 15px;
+  padding: 10px;
+  margin-top: 5px;
+  
+  transition: 0.3s;
+  outline: none;
+}
+#JoinUs fieldset input[type="text"] {
+  transition: 0.3s;
+}
+#JoinUs fieldset input[type="text"] {
+  transition: 0.3s;
+}
+#JoinUs fieldset input[type="text"]:focus {
+  border-radius: 30px;
+  border: var(--mainColor) solid 3px;
+  width: 70%;
+  padding: 10px;
+  margin-top: 5px;
 
-} 
-#JoinUs fieldset input[type=text]:focus
-{
- 
-    border-radius: 30px;
-    border: var(--mainColor) solid 5px;
-    width: 70%;
-    padding: 10px;
-    margin-top: 5px;
-
+  outline: none;
 }
 
-#JoinUs fieldset input[type=email]:focus
-{
-    border-radius: 30px;
-    border:var(--mainColor) solid 5px;
-    width: 70%;
-    padding: 10px;
-    margin-top: 5px;
+#JoinUs fieldset input[type="email"]:focus {
+  border-radius: 30px;
+  border: var(--mainColor) solid 3px;
+  width: 70%;
+  padding: 10px;
+  margin-top: 5px;
+
+  outline: none;
 }
 
-#JoinUs fieldset input[type=submit]{
-    display: inline-block;
-    margin-left: 25%;
-    border-radius: 15px;
-    width: 200px;
-    height: 40px;
-    background-color: var(--mainColor);
-    box-shadow: var(--shadowBig);
-    color: white;
-    font-weight: 400;
+#JoinUs fieldset input[type="submit"] {
+  display: inline-block;
+  margin-left: 25%;
+  border-radius: 100px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--mainColor);
+  box-shadow: var(--shadow);
+  color: white;
+
+  font-size: 22px;
+  font-weight: 400;
+  
+  border: none;
+  cursor: pointer;
 }
 
-#JoinUs fieldset input[type=submit]:hover{
-    background-color: var( --mainColor_sub1);
+#JoinUs fieldset input[type="submit"]:hover {
+  background-color: var(--mainColor_sub1);
 }
 
 #thankYouDiv {
@@ -136,7 +154,7 @@ font-weight: 500;
   transition: 0.3s linear;
 }
 #thankYouCard_a:hover {
-  background-color: var(--secondaryColor_sub1)
+  background-color: var(--secondaryColor_sub1);
 }
 #thankYouCard_a {
   color: white;

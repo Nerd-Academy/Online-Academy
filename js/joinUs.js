@@ -20,11 +20,11 @@ function User(firstname, email, major) {
 let formEL = document.getElementById('JoinUs');
 formEL.addEventListener('submit', Adduser);
 function Adduser(event) {
-  
-  localStorage.clear;
-
+  let userNameFromHtml = event.target.fulltname.value;
   event.preventDefault();
 
+  if(userNameFromHtml !== ""){
+  localStorage.clear;
   let newUserFirstName = event.target.fulltname.value;
   let newUserEmail = event.target.email.value;
   let newUserMajor = event.target.major.value;
@@ -34,6 +34,10 @@ function Adduser(event) {
   console.log(newUser);
   SettingUserInformation();
   showThankYou()
+} else {
+  let placeHolderText = event.target.fulltname;
+  placeHolderText.setAttribute('placeholder','This field is necessary')
+}
 }
 
 
