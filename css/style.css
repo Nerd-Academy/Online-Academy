@@ -17,6 +17,7 @@
 html {
   scroll-behavior: smooth;
 }
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 @keyframes bouncy {
   0%   {right: 0px;}
   40%  {right: 0em;}
@@ -87,9 +88,6 @@ header > nav > ul > li > * {
   /* margin-left: 10px;
   margin-right: 10px; */
 }
-header > nav > ul > li::after {
-  background-image: url('img/break.png');
-}
 header > nav > ul > :last-child {
   margin-right: 0px;
 }
@@ -140,7 +138,7 @@ header > nav > ul > li > a:after {
   display: block;
   height: 2.3pt;
   position: absolute;
-  background: var(--mainColor);
+  background: linear-gradient(90deg, rgba(242, 2, 124, 1) 0%,  rgb(0, 255, 213) 100%);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 100%;
 
@@ -165,7 +163,7 @@ header > nav > ul > li > a:hover:after {
   height: 2.3pt;
   left: 50%;
   position: absolute;
-  background: var(--mainColor);
+  background:  linear-gradient(90deg, rgba(242, 2, 124, 1) 0%,  rgb(0, 255, 213) 100%);
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 100%; 
   left: 0; 
