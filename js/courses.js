@@ -63,10 +63,10 @@ MyCourses.prototype.removeItem = function (courseName) {
   this.courseCart.splice(courseName);
 };
 
-if(priseValue==null)
-{
-  document.getElementById('totalprise').remove();
-}
+// if(priseValue==null)
+// {
+//   document.getElementById('totalprise').remove();
+// }
 // function containsObject(courseName, courseCart) {
 //     var i;
 //     for (i = 0; i < courseCart.length; i++) {
