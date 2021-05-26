@@ -42,8 +42,8 @@ for (var i = 0, len = ids.length; i < len; i++) {
 function addCourse(event) {
   let userOnLS = JSON.parse(localStorage.getItem("User"));
   if (userOnLS === null) {
-    window.location.href = "../joinUs.html";
-    console.log(`window.location.href = '../joinUs.html' = `, (window.location.href = "../joinUs.html"));
+    window.location.href = "joinUs.html";
+    // console.log(`window.location.href = '../joinUs.html' = `, (window.location.href = "../joinUs.html"));
 
     event.preventDefault();
     // settingCourses();
