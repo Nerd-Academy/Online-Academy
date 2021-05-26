@@ -36,7 +36,13 @@ function Adduser(event) {
   showThankYou()
 } else {
   let placeHolderText = event.target.fulltname;
-  placeHolderText.setAttribute('placeholder','This field is necessary')
+  placeHolderText.setAttribute('placeholder','This field is necessary');
+  placeHolderText.style.fontSize = "20px";
+  // placeHolderText.style.placeholder = "red";
+  placeHolderText.style.borderColor ="rgb(241, 36, 71)";
+  // placeHolderText.style.placeholder ="red";
+  
+  
 }
 }
 
