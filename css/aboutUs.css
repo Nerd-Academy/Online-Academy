@@ -59,11 +59,16 @@ main {
   }
 .flip-card img{
     object-fit: cover;
+    
     width: 300px;
     height: 250px;
     float: right;
     padding: 5px;
     border-radius: 25px;
+  }
+  #ibrahim
+  {
+    object-position: 20% 10%;
   }
 .flip-card:nth-child(5){
    margin-left:300px;
@@ -94,13 +99,28 @@ main {
 }
 .flip-card-front {
     background-color:var(--mainColor);
-    color: black;
+    color: white;
+    font-weight: 500;
+    text-shadow:  rgba(0, 0, 0, 0.411) 1px 1px 1px ;
+
 }
 .flip-card-back {
     background-color:var(--mainColor_sub1);
     color: white;
+    font-weight: bold;
     transform: rotateY(180deg);
+    text-shadow:  rgba(0, 0, 0, 0.411) 1px 2px  ;
   
+}
+
+h5
+{
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  text-shadow:  rgba(0, 0, 0, 0.411) 1px 2px  ;
+
+
 }
  
 footer{margin-top: 900px;}

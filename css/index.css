@@ -47,7 +47,7 @@ width: 20px;
 
 
  #first-section {
-  background-image: url(/img/index/home-background4.jpg);
+  background-image: url(./../img/index/home-background4.jpg);
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -264,27 +264,27 @@ margin-left: 30px;
         transition: transform calc(var(--d) * 2) var(--e);
       }
       .card:nth-child(1):before {
-        background-image: url(/img/index/albert.jpg);
+        background-image: url(./../img/index/albert.jpg);
         background-size: cover;
         background-position: 60% 50%;
       }
       .card:nth-child(2):before {
-        background-image: url(/img/index/nerd1.jpg);
+        background-image: url(./../img/index/nerd1.jpg);
         background-size: cover;
         background-position: 50% 50%;
       }
       .card:nth-child(3):before {
-        background-image: url(/img/index/nerd5.jpg);
+        background-image: url(./../img/index/nerd5.jpg);
         background-size: cover;
         background-position: 50% 50%;
       }
       .card:nth-child(4):before {
-        background-image: url(/img/index/nerd3.jpg);
+        background-image: url(./../img/index/nerd3.jpg);
         background-size: cover;
         background-position: 50% 50%;
       }
       .card:nth-child(5):before {
-        background-image: url(/img/index/nerd2.jpg);
+        background-image: url(./../img/index/nerd2.jpg);
         background-size: cover;
         background-position: 30% 50%;
       }
