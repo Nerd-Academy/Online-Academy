@@ -3,12 +3,19 @@
 let courseCart = [];
 let returnedCourse = [];
 // x = 0;
+
+function randomNumber(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
 var elms = document.getElementsByClassName("splide");
 for (var i = 0, len = elms.length; i < len; i++) {
   new Splide(elms[i], {
     rewind: true,
     autoplay: true,
-    interval: 3000,
+    interval: randomNumber(3000, 3500),
+    // gap: {3em};
   }).mount();
 }
 
