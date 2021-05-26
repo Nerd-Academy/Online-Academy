@@ -18,7 +18,7 @@ if (userCourseCheck === null || userCourseCheck === undefined || userCourseCheck
   mainEl.appendChild(cardEl);
 
   let imgEl = document.createElement('img');
-  imgEl.setAttribute('src','img/myCourses/empty_cart.png')
+  imgEl.setAttribute('src','img/myCourses/empty_cart_2.png')
   cardEl.appendChild(imgEl)
 
 }}
