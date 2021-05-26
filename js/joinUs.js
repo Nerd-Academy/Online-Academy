@@ -41,19 +41,21 @@ function Adduser(event) {
   // joinLink.remove();
   GettingUserInformation();
 
-
+  if(renderedUser[0].firstname!==null)
+  {
+  
+    joinLink.remove();
+    
+  }
 
 
 }
 
+
 console.log(user);
 
 
-// if(user.firstname!==null)
-// {
 
-//   joinLink.remove();
-// }
 
 // //Save information for contact
 // userName=`${event.target.firstname.value} ${event.target.lastname.value}`;
@@ -77,8 +79,10 @@ function GettingUserInformation() {
   let userString = localStorage.getItem('User');
   let userInformatin = JSON.parse(userString);
   if (userInformatin !== null) {
-    user = userInformatin;
+    renderedUser = userInformatin;
   }
+
+  console.log(renderedUser[0].firstname);
 
 }
 
