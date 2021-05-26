@@ -100,9 +100,15 @@ main {
 .flip-card-front {
     background-color:var(--mainColor);
     color: white;
-    font-weight: 500;
+    font-weight: 400;
     text-shadow:  rgba(0, 0, 0, 0.411) 1px 1px 1px ;
 
+}
+.flip-card-front h1
+{
+position: relative;
+top: 5px;
+font-size: 23px;
 }
 .flip-card-back {
     background-color:var(--mainColor_sub1);
