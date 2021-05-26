@@ -1,3 +1,6 @@
+:root {
+  --opacity1: 50%
+}
 h1 {
   font-size: 62px;
 }
@@ -91,6 +94,49 @@ main {
   box-sizing: border-box;
   margin: 25px;
 }
+.courseFlex > :first-child {
+  position: relative;
+}
+.courseImg__overlay{
+  position:absolute;
+  left: 0;
+  top: 0;
+
+  border-radius: var(--radius);
+
+  width: 100%;
+  height: 100%;
+
+  /* border: red 1px solid; */
+
+  opacity: 0.2;
+  transition: opacity 1.2s, background 0.8s;
+  background-color: #008bba00;
+  /* background: rgba(255, 255, 255, 0); */
+  backdrop-filter: sepia(100%) brightness(150%);
+
+  /* background: linear-gradient(90deg, var(--c1, #f6d365) var(--c1T, 0%), var(--c2, #fda085) 51%, var(--c1, #f6d365)) var(--x, 0)/ 200%; */
+
+  background: linear-gradient(135deg, #008bba00 50%, rgba(255, 39, 147, var(--opacity1)) 70%, rgba(49, 235, 186, var(--opacity1))90%) var(--x, 0)/ 500%;
+
+}
+
+#card__1:hover .courseImg__1__Overlay {
+  --x: 100%;
+  opacity: 0.6;
+}
+#card__2:hover .courseImg__2__Overlay {
+  --x: 100%;
+  opacity: 0.6;
+}
+#card__3:hover .courseImg__3__Overlay {
+  --x: 100%;
+  opacity: 0.6;
+}
+#card__4:hover .courseImg__4__Overlay {
+  --x: 100%;
+  opacity: 0.6;
+}
 
 .courseFlex {
   position: relative;
@@ -100,12 +146,36 @@ main {
   justify-content: space-between;
 }
 
-.courseImg {
+.courseImgContainer {
+  overflow: hidden;
+  position: relative;
+  bottom: 0;
   height: 350px;
-  width: 180px;
-  object-fit: cover;
+  width: 500px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+
+  transition: 0.5s ease;
+}
+.courseImg {
+  height: 350px;
+  object-fit: cover;
+}
+#card__1:hover .courseImgContainer__1 {
+  bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 8px 15px;
+}
+#card__2:hover .courseImgContainer__2 {
+  bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 8px 15px;
+}
+#card__3:hover .courseImgContainer__3 {
+  bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 8px 15px;
+}
+#card__4:hover .courseImgContainer__4 {
+  bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 8px 15px;
 }
 
 .courseSlidesContainer.splide {
@@ -231,6 +301,7 @@ main {
   transform: scale(1);  
 }
 
+
 #splideAnimOne__2 {
   z-index: +90;
   background: rgba(172, 231, 35, 0.623);
@@ -268,6 +339,89 @@ main {
 #card__2:hover #splideAnimTwo__2 {
   left: 88%;
 }
+
+
+#splideAnimOne__3 {
+  z-index: +90;
+  background: rgba(172, 231, 35, 0.623);
+  background: var(--gradientOne);
+
+  position: relative;
+  left: 80%;
+  bottom: 12%;
+  width: 140px;
+  height: 140px;
+
+  transform: scale(1.0) rotate(45deg);
+  transition: 0.8s ease;
+}
+#splideAnimThree__3 {
+  z-index: +90;
+
+  background: rgba(172, 231, 35, 0.623);
+  background: var(--gradientTwo);
+
+  position: relative;
+  left: 88%;
+  bottom: 18%;
+  width: 140px;
+  height: 140px;
+
+  border-radius: 100%;
+
+  transform: rotate(45deg);
+  transition: 0.8s ease;
+  transition-delay: 0.2s;
+}
+#card__3:hover #splideAnimOne__3 {
+  transform: scale(1.2) rotate(45deg);
+}
+#card__3:hover #splideAnimThree__3 {
+  transform: scale(1.2);
+}
+
+#splideAnimOne__4 {
+  z-index: +90;
+  background: rgba(172, 231, 35, 0.623);
+  background: var(--gradientOne);
+
+  position: relative;
+  left: 80%;
+  top: 3%;
+  width: 140px;
+  height: 140px;
+
+  transform: scale(1.0) rotate(45deg);
+  transition: 0.8s ease;
+
+}
+#splideAnimThree__4 {
+  z-index: +90;
+
+  background: rgba(172, 231, 35, 0.623);
+  background: var(--gradientTwo);
+
+  position: relative;
+  left: 90%;
+  bottom: 32%;
+  width: 140px;
+  height: 140px;
+
+  border-radius: 100%;
+
+  transform: rotate(45deg);
+  transition: 0.8s ease;
+  transition-delay: 0.2s;
+
+}
+#card__4:hover #splideAnimOne__4 {
+  left: 75%;
+}
+#card__4:hover #splideAnimThree__4 {
+  left: 79%;
+}
+
+
 
 .slideImgDiv:hover .hoverJoinusOverlay {
   opacity: 1;

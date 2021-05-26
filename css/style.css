@@ -56,6 +56,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+#logoInHeader {
+  height: 50px;
+}
 .headerBreak {
   position: relative;
   top: 20px;
@@ -87,6 +90,9 @@ header > nav > ul > li {
 header > nav > ul > li > * {
   /* margin-left: 10px;
   margin-right: 10px; */
+}
+header > nav > ul > :first-child {
+  margin-left: 0px;
 }
 header > nav > ul > :last-child {
   margin-right: 0px;
