@@ -5,6 +5,25 @@ let totalPrise=0;
 let priseValue;
 let priseInt;
 
+let userCourseCheck = JSON.parse(localStorage.getItem('My Courses'));
+
+function checkEmptyCart() {
+if (userCourseCheck === null || userCourseCheck === undefined || userCourseCheck.length == 0) {
+  console.log('userCourseCheck is empty');
+
+  let mainEl = document.getElementById('main');
+
+  let cardEl = document.createElement('div');
+  cardEl.setAttribute('id','emptyCart');
+  mainEl.appendChild(cardEl);
+
+  let imgEl = document.createElement('img');
+  imgEl.setAttribute('src','img/myCourses/empty_cart.png')
+  cardEl.appendChild(imgEl)
+
+}}
+checkEmptyCart();
+
 function loadCart() {
   cartFromLocalStorage = JSON.parse(localStorage.getItem("My Courses")) || [];
 }
@@ -134,6 +153,7 @@ function removeCourseFromHtmlAndLS(event) {
   loadCoursesArrayIntoLocalStorage();
   decreaseAndSetCounterToHtmlAndLS();
 
+  checkEmptyCart();
   console.log(cartFromLocalStorage);
 }
 

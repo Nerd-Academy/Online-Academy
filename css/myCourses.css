@@ -101,3 +101,28 @@ margin-left: 25px;
 {
     width: 75%;
 }
+
+@keyframes shadowUpAndDown {
+    0%   {box-shadow: rgba(0, 0, 0, 0.411) 0px 2px 4px;}
+    50%  {box-shadow: rgba(0, 0, 0, 0.411) 0px 12px 25px;}
+    90%  {box-shadow: rgba(0, 0, 0, 0.411) 0px 12px 25px;}
+    100% {box-shadow: rgba(0, 0, 0, 0.411) 0px 2px 4px;}
+  }
+#emptyCart {
+    width: 100%;
+    height: 650px;
+
+    box-shadow: var(--shadow);
+    border-radius: var(--radiusBig);
+
+    background-size: cover;
+    animation: shadowUpAndDown;
+    /* animation-delay: 3s; */
+    animation: shadowUpAndDown 1.5s 1 linear;
+    /* background-image: url('img/myCourses/empty_cart.png'); */
+}
+#emptyCart > img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+}
