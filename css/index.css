@@ -20,7 +20,7 @@ main {
   top: 50%;
   position: fixed;
   list-style-type: none;
-   
+box-shadow: var(--shadowBig);   
 }
 
 
@@ -37,6 +37,8 @@ main {
 #sidePanel  li a:hover {
  
   border-left: var(--mainColor) 5px solid;
+  box-shadow: var(--shadow);   
+
 }
 
 #academyLink{
