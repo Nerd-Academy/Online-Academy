@@ -1,7 +1,8 @@
 'use strict';
 
 let user = [];
-
+let newUserFirstName;
+let renderedUser=[];
 
 //Contact Information
 // let userName;
@@ -18,6 +19,8 @@ function User(firstname, email, major) {
 
 }
 let formEL = document.getElementById('JoinUs');
+let joinLink=document.getElementById('join-us');
+
 formEL.addEventListener('submit', Adduser);
 function Adduser(event) {
   
@@ -25,19 +28,32 @@ function Adduser(event) {
 
   event.preventDefault();
 
-  let newUserFirstName = event.target.fulltname.value;
+  newUserFirstName = event.target.fulltname.value;
   let newUserEmail = event.target.email.value;
   let newUserMajor = event.target.major.value;
 
 
   let newUser = new User(newUserFirstName, newUserEmail, newUserMajor);
-  console.log(newUser);
+  // console.log(newUser);
+
+
   SettingUserInformation();
+  // joinLink.remove();
+  GettingUserInformation();
+
+
+
+
 }
 
+console.log(user);
 
 
+// if(user.firstname!==null)
+// {
 
+//   joinLink.remove();
+// }
 
 // //Save information for contact
 // userName=`${event.target.firstname.value} ${event.target.lastname.value}`;

@@ -7,7 +7,7 @@
 //   });
 
 
-document.getElementById('btn').onclick = function () {
-  window.location.href = 'joinUs.html';
-//   document.getElementById('btn').remove();
-};
+// document.getElementsByClassName('joinbotton').onclick = function () {
+//   window.location.href = 'joinUs.html';
+// //   document.getElementById('btn').remove();
+// };

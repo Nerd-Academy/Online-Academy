@@ -49,3 +49,6 @@ if(counter==0)
 {
   document.getElementById('totalprise').remove();
 }
+
+// let joinLink=document.getElementById("join-us");
+// joinLink.addEventListener('submit',)
