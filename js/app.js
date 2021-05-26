@@ -2,6 +2,50 @@
 
 let counter = 0;
 
+
+let userFromLS = JSON.parse(localStorage.getItem('User'));
+console.log('userFromLS = ', userFromLS);
+// console.log('userFromLS length = ', userFromLS.length);
+if (userFromLS !== null) {
+if (userFromLS.length >= 1) {
+let joinUsEl = document.getElementById('joinUsButtonDivContainer');
+let joinUsButtonDivEl = document.getElementById('joinUsButtonDiv');
+joinUsButtonDivEl.remove();
+
+
+
+ let userName = userFromLS[0].firstname;
+ let divEl = document.createElement('div');
+ divEl.setAttribute('id','userNameFromLSDiv');
+ joinUsEl.textContent = `Welcome ${userName}`;
+ joinUsEl.appendChild(divEl);
+
+ let divOverlayEl = document.createElement('div');
+ divOverlayEl.setAttribute('id','userNameOverlay');
+
+ let logoutDivEl = document.createElement('div');
+ logoutDivEl.setAttribute('id','logoutDiv');
+ logoutDivEl.textContent = 'Log Out'
+
+
+ divOverlayEl.appendChild(logoutDivEl);
+ 
+ joinUsEl.appendChild(divOverlayEl);
+
+ logoutDivEl.addEventListener('click', removeUserFromLSFun)
+
+ let btnEl = document.getElementById('btn');
+ if (btnEl !== null) {
+ btnEl.remove();
+ }
+console.log('removed joinUsButton');
+}}
+function removeUserFromLSFun() {
+  localStorage.clear();
+  window.location.reload();
+}
+
+
 function settingCounterToLS() {
   let data = JSON.stringify(counter);
   localStorage.setItem("Counter", data);

@@ -33,6 +33,7 @@ function Adduser(event) {
   let newUser = new User(newUserFirstName, newUserEmail, newUserMajor);
   console.log(newUser);
   SettingUserInformation();
+  showThankYou()
 }
 
 
@@ -67,4 +68,7 @@ function GettingUserInformation() {
 }
 
 
-
+function showThankYou() {
+let thankYouEl = document.getElementById('thankYouDivContainer');
+thankYouEl.removeAttribute('hidden');
+}
