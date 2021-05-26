@@ -116,7 +116,16 @@ function total()
 
   let spanEl=document.createElement('span');
   sectionEl_1.appendChild(spanEl);
-  spanEl.textContent=`The total price is \n ${totalPrise}`;
+  spanEl.textContent=`The total price is : `;
+
+  let spanEl_1=document.createElement('span');
+  sectionEl_1.appendChild(spanEl_1);
+  spanEl_1.textContent=`"  ${totalPrise}  JOD "`;
+
+
+
+
+
 }
 
 
