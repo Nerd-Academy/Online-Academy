@@ -63,10 +63,12 @@ MyCourses.prototype.removeItem = function (courseName) {
   this.courseCart.splice(courseName);
 };
 
-if(priseValue==null)
-{
-  document.getElementById('totalprise').remove();
-}
+// if(priseValue==null)
+// {
+//   document.getElementById('totalprise').remove();
+// }
+
+
 // function containsObject(courseName, courseCart) {
 //     var i;
 //     for (i = 0; i < courseCart.length; i++) {
@@ -81,3 +83,31 @@ if(priseValue==null)
 // {
 
 // }
+
+// if(!==null)
+//   {
+//     let welcomEl=document.getElementById('welcom');
+
+  
+//     // joinLink.remove();
+//     welcomEl.textContent=` Welcome  ${renderedUser[0].firstname} `
+
+//   }
+
+ joinLink=document.getElementById('join-us');
+welcomEl=document.getElementById('welcom');
+
+
+GettingUserInformation();
+console.log(renderedUser[0].firstname);
+if(renderedUser[0].firstname!==null)
+{
+
+  joinLink.setAttribute('hidden',"");
+  // location.href = 'courses.html';
+  // console.log(JSON.parse(localStorage.getItem('User')));
+
+  welcomEl.textContent=` Welcome  ${renderedUser[0].firstname} `
+  // window.location.reload();
+
+}

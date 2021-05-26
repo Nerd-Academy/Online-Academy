@@ -1,7 +1,6 @@
 'use strict';
 
 let user = [];
-let newUserFirstName;
 let renderedUser=[];
 
 //Contact Information
@@ -18,17 +17,20 @@ function User(firstname, email, major) {
   user.push(this);
 
 }
-let formEL = document.getElementById('JoinUs');
+console.log(document.getElementById('joinform'));
+let formEL = document.getElementById('joinform');
 let joinLink=document.getElementById('join-us');
+let welcomEl=document.getElementById('welcom');
 
 formEL.addEventListener('submit', Adduser);
 function Adduser(event) {
   
-  localStorage.clear;
 
   event.preventDefault();
+  // localStorage.clear;
 
-  newUserFirstName = event.target.fulltname.value;
+
+  let newUserFirstName = event.target.fulltname.value;
   let newUserEmail = event.target.email.value;
   let newUserMajor = event.target.major.value;
 
@@ -40,16 +42,44 @@ function Adduser(event) {
   SettingUserInformation();
   // joinLink.remove();
   GettingUserInformation();
-
+  console.log(renderedUser[0].firstname);
   if(renderedUser[0].firstname!==null)
   {
   
-    joinLink.remove();
-    
-  }
+    joinLink.setAttribute('hidden',"");
+    location.href = 'courses.html';
+    // console.log(JSON.parse(localStorage.getItem('User')));
+  
+    welcomEl.textContent=` Welcome  ${renderedUser[0].firstname} `
+    // window.location.reload();
 
+  }
+  
+// window.location.reload();
+}
+GettingUserInformation();
+if(renderedUser[0].firstname!==null)
+{
+
+  joinLink.setAttribute('hidden',"");
+  // location.href = 'courses.html';
+  // console.log(JSON.parse(localStorage.getItem('User')));
+
+  welcomEl.textContent=` Welcome  ${renderedUser[0].firstname} `
+  // window.location.reload();
 
 }
+
+
+  // if(renderedUser[0].firstname===null)
+  // {
+  //   joinLink.removeAttribute('hidden',"");
+
+  
+  // }
+
+
+
 
 
 console.log(user);

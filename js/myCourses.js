@@ -135,7 +135,7 @@ renderCourse();
 console.log(cartFromLocalStorage);
 
 function removeCourseFromHtmlAndLS(event) {
-  event.target.parentElement.parentElement.remove();
+  event.target.parentElement.parentElement.setAttribute('hidden',"");
 
   console.log('event.target = ', event.target);
   console.log('courseName on HTML = ',event.target.parentElement.children[0].textContent);
@@ -166,3 +166,20 @@ function removeCourseFromHtmlAndLS(event) {
   console.log(cartFromLocalStorage);
 }
 
+joinLink=document.getElementById('join-us');
+welcomEl=document.getElementById('welcom');
+
+
+GettingUserInformation();
+console.log(renderedUser[0].firstname);
+if(renderedUser[0].firstname!==null)
+{
+
+  joinLink.setAttribute('hidden',"");
+  // location.href = 'courses.html';
+  // console.log(JSON.parse(localStorage.getItem('User')));
+
+  welcomEl.textContent=` Welcome  ${renderedUser[0].firstname} `
+  // window.location.reload();
+
+}
