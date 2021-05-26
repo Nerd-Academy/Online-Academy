@@ -1,62 +1,284 @@
+:root {
+  --shadow: rgba(0, 0, 0, 0.411) 0px 2px 4px;
+  --shadowBig: rgba(0, 0, 0, 0.611) 0px 4px 8px;
+  --radiusFull: 999px;
+  --radius: 20px;
+  --radiusBig: 40px;
+  --gradientOne: linear-gradient(343deg, rgba(247, 110, 185, 0.5) 20%, rgb(235, 49, 210) 100%);
+  --gradientTwo: linear-gradient(343deg, rgba(252, 255, 101, 0.5) 0%, rgba(49, 235, 186, 1) 100%);
+  --mainColor: #2a96fc;
+  --mainColor_sub1: #8bc7ff;
+  --secondaryColor: rgba(49, 235, 186, 1);
+  --secondaryColor_sub1: rgb(152, 250, 224);
+  --colorThree: rgb(235, 49, 210);
+  --colorFour: rgb(255, 39, 147);
+  --marginDefault: 25px;
+}
+html {
+  scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@keyframes bouncy {
+  0%   {right: 0px;}
+  40%  {right: 0em;}
+  43%  {right: 0.9em;}
+  46%  {right: -0.4em;}
+  49%  {right: 0.4em;}
+  52%  {right: 0em;}
+  55%  {right: 0em;}
+  100% {right: 0em;}
+}
+h2 {
+  font-size: 30px;
+}
 
+p {
+  font-size: 20px;
+}
+ 
 header {
-    z-index: +100;
+  z-index: +100;
 
-  background-color: lightgrey;
+  background: white;
   height: 80px;
+  color: var(--mainColor);
 
   position: fixed;
   top: 0;
+  right: 0;
   width: 100%;
-}
 
-main {
-    margin-top: 100px;
-    min-height: 300px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
+  box-shadow: var(--shadowBig);
 
-header img {
-  float: left;
-}
+  display: flex;
+  flex-direction: row;
 
-header nav {
-  margin-top: 30px;
-  margin-left: 300px;
-  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
 }
-header ul li {
-  display: inline-block;
-  margin-left: 100px;
+#logoInHeader {
+  height: 50px;
 }
-header ul li a {
+.headerBreak {
+  position: relative;
+  top: 20px;
+  height: 20px;
+  width: 1pt;
+  opacity: 0.2;
+  height: 15px;
+
+  background-color: black;
+}
+header * {
   text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+}
+header > div:first-of-type {
+  margin-left: 40px;
 }
 
-footer {
-    z-index: +100;
-    
-    background-color: lightgrey;
-    height: 80px;
-  }
-footer h4 {
-  padding: 10px;
-  text-align: center;
+header > nav > ul {
+  display: flex;
+}
+header > nav > ul > li {
+  margin: 0 40px;
+  position: relative;
+  padding: 15px 0;
+  user-select: none;
+}
+header > nav > ul > :first-child {
+  margin-left: 0px;
+}
+header > nav > ul > :last-child {
+  margin-right: 0px;
 }
 
-footer div {
-  /* margin-left: 620px; */
+
+/* header > nav > ul > li > a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
   display: block;
-  width: fit-content;
+  height: 2.3pt;
+  left: 50%;
+  position: absolute;
+  background: var(--mainColor);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  
+}
+header > nav > ul > li > a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+#activePage:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2.3pt;
+  left: 50%;
+  position: absolute;
+  background: var(--mainColor);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 100%; 
+  left: 0; 
+
+  border-radius: 50px;
+} */
+
+
+
+header > nav > ul > li > a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2.3pt;
+  position: absolute;
+  background: linear-gradient(90deg, rgba(242, 2, 124, 1) 0%,  rgb(0, 255, 213) 100%);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 100%;
+
+  opacity: 0;
+  top: 113%;
+  
+  transition: 0.2s ease;
+}
+header > nav > ul > li > a:hover:after { 
+  width: 100%; 
+
+  opacity: 1;
+  top: 100%;
+}
+
+
+#activePage:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2.3pt;
+  left: 50%;
+  position: absolute;
+  background:  linear-gradient(90deg, rgba(242, 2, 124, 1) 0%,  rgb(0, 255, 213) 100%);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 100%; 
+  left: 0; 
+
+  opacity: 1;
+  top: 100%;
+  border-radius: 50px;
+}
+
+
+header > div {
+  display: flex;
+}
+header > div > :first-child {
+  align-self: center;
+  /* border: red 1px solid; */
+}
+header > a {
+  margin-right: 40px;
+
+  box-sizing: border-box;
+  padding: 10px 25px;
+  border-radius: var(--radiusBig);
+
+  /* background-color: var(--secondaryColor); */
+  background: var(--secondaryColor);
+  position: relative;
+  box-shadow: 0 0 0 2pt  var(--secondaryColor);
+
+  transition: 0.1s ease;
+  animation:bouncy 4s infinite linear;
+}
+header > a > div {
+  position: relative;
+  bottom: 1px;
+  color: rgba(255, 255, 255, 1);
+}
+header a {
+  color: var(--mainColor);
+}
+header a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+header > a:hover {
+  animation-play-state: paused;
+  background-color: var(--secondaryColor_sub1);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+main {
+  margin-top: 100px;
+  min-height: 603px;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
-footer i {
-  margin-left: 10px;
+
+footer {
+  padding: 0px 0;
+  z-index: +100;
+  width: 100%;
+  /* border: red 1px solid; */
+  background-color: rgba(204, 204, 204, 0.116);
+  height: fit-content;
 }
 
+footer > div > *{
+  padding: 25px;
+}
+footer * {
+  color: var(--mainColor);
+  line-height: 1.618;
+}
+footer h5 {
+  opacity: 0.5;
+}
+footer i {
+  font-size: 30px;
+  margin-top: 13px;
+  margin-left: 10px;
+  transition: 0.3s linear;
+
+  cursor: pointer;
+}
+footer i:hover {
+  opacity: 0.5;
+}
 footer i:first-child {
   margin-left: 0px;
 }
+.footerRow__1 {
+  /* border: red 1px solid; */
+  margin: 0;
+  /* width: 100%; */
+  display: flex;
+  justify-content:space-between;
+}
+.footerRow__1 > :first-child {
+  margin-left: 100px;
+}
+.footerRow__1 > :last-child {
+  margin-right: 100px;
+}
+
+.emptyLine {
+  opacity: 0;
+}
+footer a {
+  text-decoration: none;
+  transition: 0.3s linear;
+  cursor: pointer;
+}
+footer a:hover {
+  opacity: 0.5;
+}
+

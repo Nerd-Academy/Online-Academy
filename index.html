@@ -1,72 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NERD</title>
-    <link rel="shortcut icon" href="https://icon-library.com/images/nerd-icon-png/nerd-icon-png-26.jpg" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/d411685a29.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NERD</title>
+  <link rel="shortcut icon" href="img/logo_img_outline.png" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/d411685a29.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
 </head>
+
 <body>
-    <header>
-        <h1></h1>
-        <img src="https://icon-library.com/images/nerd-icon-png/nerd-icon-png-26.jpg "width = 50px alt="logo">
-        <nav>
-            <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="catagores.html">Categories</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="joinus.html">Join Us</a></li>
-            <li><a href="mycorses.html">My Courses</a></li>
-            </ul>
+  <header>
+    <div><img id="logoInHeader" src="img/logo_text.png" alt="logo" /></div>
+    <nav>
+      <ul>
+        <li><a id="activePage" href="index.html">Home</a></li>
+        <div class="headerBreak"></div>
+        <li><a href="courses.html">Courses</a></li>
+        <div class="headerBreak"></div>
+        <li><a href="aboutUs.html">About Us</a></li>
+        <div class="headerBreak"></div>
+        <li>
+          <a href="myCourses.html">My Courses <span id="counterSpan">0</span></a>
+        </li>
+      </ul>
+    </nav>
+    <a href="joinUs.html"><div>Join Us</div></a>
+  </header>
+  <div id="sidePanel">
+    <nav>
+      <ul>
+        <li><a href="#academyLink">Our Academy</a></li>
+        <li><a href="#coursesLink">About Courses</a></li>
+        <li><a href="#ourNerds">Our Nerds</a></li>
+      </ul>
+    </nav>
+  </div>
+  <main>
+    <section id="first-section">
+      <div>
 
-            
-        </nav>
+        <h2>Nerd is not just a 4 letter word.<br>It's a future 6 digit salary.</h2>
+        <p>Towards a society possessing skill and knowledge</p>
+        <button id="btn">Join Us</button>
+      </div>
+      <div id="academyLink"></div>
 
-    </header>
-    <div id="sidePanel">
-        <nav>
-            <ul>
-                <li><a href="">Our Vision</a></li>
-                <li><a href="">About Nerd</a></li>
-                <li><a href="">Our Nerds</a></li>
-            </ul>
-        </nav>
-    </div>
-    <main>
-        
-        <section>
-            <h2>our statement</h2>
-            <p>any thing catchy </p>
-        </section>
-      <section>
-          <h2></h2>
-          <img src="" alt="">
-          <p></p>
-      </section>
-      <section>
-          <h2></h2>
-          <div><img src="https://cdn3.vectorstock.com/i/thumb-large/80/82/person-gray-photo-placeholder-man-vector-22808082.jpg" alt="nerd1"></div>
-          <div><img src="https://cdn3.vectorstock.com/i/thumb-large/80/82/person-gray-photo-placeholder-man-vector-22808082.jpg" alt="nerd2"></div>
-          <div><img src="https://cdn3.vectorstock.com/i/thumb-large/80/82/person-gray-photo-placeholder-man-vector-22808082.jpg" alt="nerd3"></div>
-          <div><img src="https://cdn3.vectorstock.com/i/thumb-large/80/82/person-gray-photo-placeholder-man-vector-22808082.jpg" alt="nerd"></div>
-          <div><img src="https://cdn3.vectorstock.com/i/thumb-large/80/82/person-gray-photo-placeholder-man-vector-22808082.jpg" alt="nerd5"></div>
-      </section>
-    </main>
-    <footer>
-        
-        <h4>Nerd Academy</h4>
+    </section>
+
+    <section id="ourAcademy">
+      <img src="img/index/ourAcadmey.jpg" alt="ourAcademy" />
+
+      <div class="middle-sections-text">
+        <h2>OurAcademy</h2>
+        <p>A company interested in raising the educational level of young adults and seeking to develop their skills in
+          various fields of knowledge (languages, information technology, mathematics, ...). In light of the current
+          situation of the global pandemic, Covid-19, the world is moving towards online learning, we hope that you
+          will find your future in our academy, from high-level academic staff to advanced-level teaching
+          content according to the changes of the era, and with the latest methods and teaching methods.
+          <span id="coursesLink"></span>
+        </p>
+      </div>
+
+    </section>
+
+    <section id="aboutCourses">
+      <img src="img/index/ourCorses.jpg" alt="About Courses img" />
+
+      <div class="middle-sections-text">
+        <h2>About Courses</h2>
+        <p>Our Academy offers educational courses in Many subjects, from Graphic Design to Mathematics. A varied menu helps us create a better world full of smart nerds, a world we strive for everyday. Our courses cover basic topics upto master-level topics, which makes sure we cover every nerds need.</p>
+      </div>
+    </section>
+
+    <section id="ourNerds">
+      <h3>Our Nerds</h3>
+      <div class="page-content">
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Dr. Albert Einstein</h2>
+            <p class="copy">
+              University of Zurich (PhD, 1905)</p>
+            <div class="fontLInk">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-instagram-square"></i>
+              <i class="fab fa-linkedin"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Dr. John K. Nash</h2>
+            <p class="copy">
+              Carnegie Institute of Technology B.S and M.S.
+              Princeton University Ph.D.</p>
+
+            <div class="fontLInk">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-instagram-square"></i>
+              <i class="fab fa-linkedin"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Eng. Nasser Ghassan</h2>
+            <p class="copy">Software engineer, Carnegie Mellon University (2008),</p>
+            <div class="fontLInk">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-instagram-square"></i>
+              <i class="fab fa-linkedin"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Eng. Magdi Zafar</h2>
+            <p class="copy">Software engineer, Harvard University, University of California, Los Angeles</p>
+            <div class="fontLInk">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-instagram-square"></i>
+              <i class="fab fa-linkedin"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Mr. Imtiaz Adil</h2>
+            <p class="copy">Graphic design, Earlham College
+              University of Michigan</p>
+
+            <div class="fontLInk">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-instagram-square"></i>
+              <i class="fab fa-linkedin"></i></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <div class="footerRow__1">
+        <div class="row credits">
+          <h5 class="emptyLine">vvv</h5>
+          <h2>Nerd Academy®</h2>
+        </div>
+        <div class="row">
+          <h5>Designed by</h5>
+          <h2>Nerd Academy.org</h2>
+          <h4>© 2011 – 2021 <a> PRIVACY POLICY</a></h4>
+        </div>
         <div>
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-twitter-square"></i>
-        <i class="fab fa-instagram-square"></i>
-        <i class="fab fa-linkedin"></i>
+          <h5>Social media</h5>
+          <div>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-linkedin"></i>
+          </div>
+        </div>
+      </div>
     </div>
-    </footer>
-    
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/index.js"></script>
+  <!-- <script src="js/myCourses.js"></script> -->
 </body>
+
+
 </html>

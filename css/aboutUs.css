@@ -1,0 +1,136 @@
+css * {
+    box-sizing: border-box;
+   }
+
+main {
+    width: 80%;
+    margin-left:auto;
+    margin-right: auto; 
+    height:600px
+  
+  }
+  #aboutAcademy #intro h2{margin-bottom: 25px;}
+ 
+#aboutAcademy #intro{
+  
+   display:block;
+   width: 40%;
+   line-height: 1.5;
+   float: left;
+   padding-top: 120px;
+   font-size: 20px;
+   text-indent: 20px;
+   text-align: justify;
+   text-justify: inter-word;
+  }
+
+#aboutAcademy img {
+    display: block;
+    margin-left:50%;
+    padding-top: 50px;
+    margin-right:auto;
+    width: 50%;
+    object-fit: cover;
+  }
+#teamDev{
+    
+    margin-top: 50px;   
+  }
+#teamDev h2{
+   margin-bottom: 50px;
+   text-align: center;
+   padding-bottom: 50px;
+   color: var(--mainColor);
+   font-weight: bold;
+   font-size: 30px;
+  }
+
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    display: inline-block; 
+    margin-bottom:50px; 
+    margin-left: 80px;
+    border-radius: 25px; 
+  }
+.flip-card img{
+    object-fit: cover;
+    
+    width: 300px;
+    height: 250px;
+    float: right;
+    padding: 5px;
+    border-radius: 25px;
+  }
+  #ibrahim
+  {
+    object-position: 20% 10%;
+  }
+.flip-card:nth-child(5){
+   margin-left:300px;
+   margin-top: 50px;
+}
+   
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.5s ease;
+    transform-style: preserve-3d;
+   
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+   
+ 
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border: 5px soli #f1f1f1;border-radius: 25px;
+}
+.flip-card-front {
+    background-color:var(--mainColor);
+    color: white;
+    font-weight: 500;
+    text-shadow:  rgba(0, 0, 0, 0.411) 1px 1px 1px ;
+
+}
+.flip-card-back {
+    background-color:var(--mainColor_sub1);
+    color: white;
+    font-weight: bold;
+    transform: rotateY(180deg);
+    text-shadow:  rgba(0, 0, 0, 0.411) 1px 2px  ;
+  
+}
+.flip-card-back a {
+  font-size: 30px;
+  margin: 10px;
+}
+.flip-card-back a:last-child {
+  color: black;
+}
+.fa-envelope {
+  color: rgb(255, 208, 0);
+}
+
+h6
+{
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  text-shadow:  rgba(0, 0, 0, 0.411) 1px 2px  ;
+
+
+}
+ 
+footer{margin-top: 900px;}
